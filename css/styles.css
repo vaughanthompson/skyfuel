@@ -3377,14 +3377,21 @@ tr.spanRowLeft td {
     -o-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    border: 1px solid #f00;
   }
 }
 @media screen and (min-width: 1100px) {
   .threeCol > div {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
-    border: 1px solid #f00;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    border-left: 1px solid #00d4fe;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .threeCol > div:first-of-type {
+    padding-left: none;
+    border: none;
   }
 }
 /* 
