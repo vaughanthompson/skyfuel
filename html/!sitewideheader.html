@@ -1,0 +1,331 @@
+﻿
+<!DOCTYPE html>
+<!-- end cms landing content -->
+<html>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            // activeLinking
+            var thebodyclass = $('body').attr('class')
+            if ($('body').hasClass(thebodyclass)) {
+                $('body').find("."+thebodyclass).addClass('activeLink');
+            }
+
+
+                // mobile nav for test site only
+            $('#navClose').hide();
+            $('#navClose').click(function(){
+                $(this).hide();
+                $('#navCart').show();
+                $('#navTrigger').show();
+                $("div.mblnavContainer").scrollTo(0);
+                $('div.mblnav').hide();
+                $('html, body').removeClass('noscroll');
+                return false;
+            });
+
+            $('#navTrigger').click(function(){
+                $(this).hide();
+                $('#navCart').hide();
+                $('#navClose').show();
+                $('div.mblnav').fadeTo(500,'1.0');
+                $('html, body').addClass('noscroll');
+                return false;
+
+            });
+
+
+        });
+    </script>
+
+    <a href="#top" id="toTop" class="icon5 icon-keyboard_arrow_up"></a>
+
+
+
+
+    <!-- mobile nav -->
+    <!-- mobile nav -->
+    <!-- mobile nav -->
+    <!-- mobile nav -->
+
+    
+
+    
+
+
+
+
+
+
+    <!-- desk nav -->
+    <!-- desk nav -->
+    <!-- desk nav -->
+    <!-- desk nav -->
+
+
+    
+
+
+
+
+    <!-- begin navigation -->
+    <div id="navHeader" class="navHeight m">
+        <a href="/" class="siteLogo">
+            <span class="mark" style="background-image: url(/images/logo-rev.svg);">&nbsp;</span>
+        </a>
+
+        <div id="mblNavControl">
+            <a href="/checkout" class="nowrap fw600" style="font-size: 1.2em;"><i class="icon2 icon-ic-cart fw600" ></i>&nbsp;(0) $0.00</a>
+            <a href="#" id="navTrigger" class="icon icon-menu" style="font-size: 2em;">&nbsp;</a>
+            <a href="#" id="navClose" class="icon icon-clear" style="font-size: 2em;">&nbsp;</a>
+        </div>
+    </div>
+
+    <div class="mblnav">
+        <div class="mblnavContainer gradientBlackFromBottom">
+            <div class="navHeight">&nbsp;</div>
+                <div class="containMNav restrictWidth">
+                    
+                <span class="spacer spacer3"></span>
+                <h6 class="fw600">Shop Online</h6>
+                <nav class="mblnavSection">
+                    <a href="/shop">Aviation Oils &amp; Lubricants</a>
+                    <a href="/account"><i class="icon2 icon-person" ></i>&nbsp;My Account</a>
+                </nav>
+                
+                <span class="spacer spacer3"></span>
+                <h6 class="fw600">Skyfuel Locations &amp; Services</h6>
+                <nav class="mblnavSection">
+                    <a href="/locations.html">Skyfuel Locations</a>
+                    <a href="/services.html">Refueling Services</a>
+                    <a href="/tanks-equipment.html">Tanks &amp; Equipment</a>
+                    <a href="/fuel-cards-payments.html">Fuel Cards &amp; Payments</a>
+                </nav>
+
+                <span class="spacer spacer3"></span>
+                <h6 class="fw600">Our Company</h6>
+                <nav class="mblnavSection">
+                    <a href="/about.html">About Us</a>
+                    <a href="/viva-energy-group.html">Viva Energy Group</a>                    
+                    <a href="/careers.html">Careers</a>
+                    <a href="/contact.html">Contact Us</a>
+                    <a href="tel:1300759383"><i class="icon2 icon-phone">&nbsp;</i>1300 759 383</a>
+                    <a href="https://www.facebook.com/people/Skyfuel-Australia/100057228951184" target="_blank"><i class="icon5 icon-facebook1" ></i></a>
+                </nav>
+
+                <span class="spacer spacer3"></span>
+                <h6 class="fw600">Resources</h6>
+                <nav class="mblnavSection">
+                    <a href="/faq.html">FAQ</a>
+                    <a href="/data-sheets.html">Fuel Quality Data Sheets</a>                    
+                    <a href="/asic.html">ASIC Cards</a>
+                </nav> 
+                </div>  
+            </div>
+    </div>   
+
+
+    <div class="deskNav">
+        <div class="mblnavContainer gradientBlackFromBottom">
+            <!-- space for margining the fixed nav height -->
+            <header class="relative placehold">
+                <a href="/" class="siteLogo">
+                    <span class="mark">&nbsp;</span>
+                </a>
+            </header>
+            <!-- space for margining the fixed nav height -->
+                
+            <div class="containMNav">
+                <nav class="mblnavSection">
+                    <a href="/account"><i class="icon2 icon-person" ></i>&nbsp;My Account</a>
+                    
+                </nav>
+                
+                <span class="spacer spacer3"></span>
+                <h6 class="fw600">Our Company</h6>
+                <hr>
+                <nav class="mblnavSection">
+                    <a href="/about.html">About Us</a>
+                    <a href="/viva-energy-group.html">Viva Energy Group</a>                    
+                    <a href="/careers.html">Careers</a>
+                    <a href="/contact.html">Contact Us</a>
+                    <a href="tel:1300759383"><i class="icon2 icon-phone">&nbsp;</i>1300 759 383</a>
+                    <a href="https://www.facebook.com/people/Skyfuel-Australia/100057228951184" target="_blank"><i class="icon5 icon-facebook1" ></i></a>
+                </nav>
+
+                <span class="spacer spacer3"></span>
+                <h6 class="fw600">Resources</h6>
+                <hr>
+                <nav class="mblnavSection">
+                    <a href="/faq.html">FAQ</a>
+                    <a href="/data-sheets.html">Fuel Quality Data Sheets</a>                    
+                    <a href="/asic.html">ASIC Cards</a>
+                </nav>
+            </div>  
+        </div>
+    </div>   
+
+        
+    <div class="navHeight m">&nbsp;</div>
+    <!-- end mobile navigation -->
+
+
+
+    
+
+
+
+    <!-- space for margining the fixed nav height -->
+    <header class="d relative placehold">
+        <a href="/" class="siteLogo">
+            <span class="mark">&nbsp;</span>
+        </a>
+    </header>
+    <!-- space for margining the fixed nav height -->
+
+
+
+    <header class="sticky d">
+        <a href="/" class="siteLogo">
+            <span class="mark" style="background-image: url(/images/logo-rev_1.svg);">&nbsp;</span>
+            <span class="wordmark">
+                <img src="/images/aeroshell-rev.svg" class="tagline">
+            </span>
+        </a>
+
+        <nav>
+            <a href="/locations.html" class="effect locations">Skyfuel<br>Locations</a>
+            <a href="/services.html" class="effect services">Refueling<br>Services</a>
+            <a href="/tanks-equipment.html" class="effect tanksEquipment">Tanks &amp;<br>Equipment</a>
+            <a href="/fuel-cards-payments.html" class="effect cardsPayments">Fuel Cards<br>&amp; Payments</a>
+            <a href="/shop.html" class="effect shop">Shop Oils &amp;<br>Lubricants</a>
+            
+            
+            <a href="/checkout" class="ctaButton nowrap"><i class="icon-ic-cart"></i>&nbsp; $0.00 (0)</a>
+            <a href="#" id="navTrigger2" class="icon icon-menu " style="font-size: 2em;">&nbsp;</a>
+            <a href="#" id="navClose2" class="icon icon-clear " style="font-size: 2em;">&nbsp;</a>
+        </nav> 
+    </header>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('a#toTop').css('opacity','0');
+            new Waypoint({
+            element: document.getElementsByTagName('main'),
+            handler: function(direction) {
+                if (direction === 'down') {
+                    $('a#toTop').fadeTo(500,'1.0');
+                }
+                else {
+                    $('a#toTop').fadeTo(500,'0');
+                }
+            },
+                offset: '-250%'
+            })
+
+            // activeLinking
+            var thebodyclass = $('body').attr('class')
+            if ($('body').hasClass(thebodyclass)) {
+                $('body').find("."+thebodyclass).addClass('activeLink');
+            }
+        
+            // Mobile Navigation - FOR LOCALHOST TESTING ONLY
+            $.localScroll({
+                target: 'body',
+                queue: false,
+                hash: false,
+                duration: 500,
+                easing: 'easeOutQuad'
+            });
+
+            $('#toTop').css('opacity','0.0');
+                new Waypoint({
+                    element: document.getElementsByTagName('main'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $('#toTop').fadeTo(1000,'1.0');
+                        }
+                        else {
+                            $('#toTop').fadeTo(1000,'0.0');
+                        }
+                    },
+                offset: '0'
+            })
+
+            $('#navClose').hide();
+            $('#navClose2').hide();
+
+
+            $('#navClose').click(function(){
+                $(this).hide();
+                $('#navCart').show();
+                $('#navTrigger').show();
+                $("div.mblnavContainer").scrollTo(0);
+                $('div.mblnav').hide();
+                $('html, body').removeClass('noscroll');
+                return false;
+            });
+
+            $('#navClose2').click(function(){
+                $(this).hide();
+                $('#navCart').show();
+                $('#navTrigger2').show();
+                $("div.mblnavContainer").scrollTo(0);
+                $('div.deskNav').hide();
+                $('html, body').removeClass('noscroll');
+                return false;
+            });
+
+            $('#navTrigger').click(function(){
+                $(this).hide();
+                $('#navCart').hide();
+                $('#navClose').show();
+                $('div.mblnav').fadeTo(400,1);
+                $('html, body').addClass('noscroll');
+                return false;
+            });
+
+            $('#navTrigger2').click(function(){
+                $(this).hide();
+                $('#navCart').hide();
+                $('#navClose2').show();
+                $('div.deskNav').fadeTo(400,1);
+                $('html, body').addClass('noscroll');
+                return false;
+            });
+
+        
+            
+    
+        });
+
+
+    </script>
+
+
+       
+    
+    
+    
+
+
+</html>
+
+
+
+
+
+
+
+
+
+

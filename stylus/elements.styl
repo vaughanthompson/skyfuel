@@ -1,0 +1,312 @@
+
+
+.icon2
+    font-size: 120%
+    line-height: 1em
+    position: relative
+    bottom: -2px
+
+.icon5
+    font-size: 150%
+    line-height: 1em
+    position: relative
+    bottom: -2px
+
+.iconLozenge
+    font-size: 40px
+    border: 1px solid brand2
+    padding: 20px
+    border-radius: 50%
+    display: inline-block
+    @media phoneRule
+        font-size:30px
+        padding: 15px
+
+a#toTop
+  position: fixed
+  bottom:1vw
+  right:1vw
+  text-decoration: none
+  opacity: 0
+  z-index 1000
+  font-size: 2.5em
+  @media phoneRule
+    bottom: 5vw
+    right:5vw
+
+
+
+.siteLogo
+    align-self: stretch
+    display: flex
+    align-items: center
+    min-height: 50px
+    column-gap: 2em
+
+.siteLogo span
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+
+
+
+.siteLogo span.mark 
+    display: block
+    height: navHeight
+    width: navHeight*2.4
+    margin-top: navHeight*.25
+    @media phoneRule
+        height: navHeight*0.7
+        width: navHeight*1.8
+        margin-top: navHeight*.1
+
+.siteLogo span
+    display: flex
+    //width: 100%
+    justify-content: flex-start
+    align-items: flex-end
+    column-gap: 0.5em
+
+.siteLogo span img 
+    display: block
+    width: auto
+    //margin-top: navHeight*0.15
+    //flex: 1 1 1px
+
+.siteLogo .word
+    height: navHeight*0.45
+    @media dtrigger
+        height: 30px
+    @media smallHeightDesktop
+        height: 22px
+
+.siteLogo .tagline
+    height: navHeight*0.26
+    @media dtrigger
+        //height: 15px
+    
+
+
+@media desktopRule
+    .siteLogo span.wordmark
+        flex-direction: column
+        align-items: flex-start
+    .siteLogo span.wordmark img 
+        //margin-top: navHeight*0.075
+    .siteLogo span.wordmark img.tagline
+        height: navHeight*0.3
+@media smallHeightDesktop
+    .siteLogo span.wordmark img 
+        margin-top: 0
+    .siteLogo span.wordmark img.tagline
+        height: 12px
+
+@media phoneRule
+    .siteLogo span.wordmark
+        flex-direction: column
+        align-items: flex-start
+    .siteLogo span.wordmark img 
+        margin-top: 2px
+
+
+
+
+
+
+
+
+
+
+
+
+//cta buttons
+.cta
+    display: inline-block
+    padding: 0.75em 2.5em 0.7em 1em
+    margin: marXS 0
+    font-weight: 700 !important
+    //background-color: white
+    color: brand1
+    position: relative
+a.cta:link, a.cta:visited
+    color: brand1
+    text-decoration: none
+a.cta:hover, a.cta:active
+    color: white
+    background-color: brand3
+a.cta:hover::after
+    content: '>'
+    position: absolute
+    right: 0.75em
+    top: 0.70em
+.rev .cta
+    background-color: whiteAlp50
+    color: brand1
+ .rev a.cta:link, .rev a.cta:visited
+    color: brand1
+.rev a.cta:hover, .rev a.cta:active
+    color: white
+    background-color: brand3
+
+
+.ctaButton, a.ctaButton
+    color: brand1
+    text-decoration: none
+    font-weight: 700
+    font-size: 1.1em
+    letter-spacing: 0 
+    display: inline-block
+    background-color: brand2
+    box-shadow: 0 5px 25px 0px blackAlp20
+    border-radius: 20px 0 20px 0
+    //transition: 0.3s
+    padding: 16px 20px 16px 20px !important 
+    @media phoneRule
+        padding: 16px 20px 16px 20px !important 
+        display: block
+        text-align: center
+.ctaButton.ctaShop, 
+a.ctaButton.ctaShop,
+#cNav.alt a.ctaButton
+    color: brand1
+    background-color: brand2
+    font-size: 1.15em
+div.catItem .ctaButton.ctaShop, 
+div.catItem a.ctaButton.ctaShop
+    width: auto
+div.catList.bundles div.catItem .ctaButton.ctaShop, 
+div.catList.bundles div.catItem a.ctaButton.ctaShop    
+    @media ttrigger
+        width: auto
+        padding-left: 3vw !important
+        padding-right: 3vw !important
+.ctaButton:hover, 
+a.ctaButton:hover,
+#cNav.alt a.ctaButton:hover
+    //display: block
+    color: brand2
+    background-color: brand1
+
+.ctaButton.activeLink 
+    border:none !important
+    background: none !important
+    box-shadow: none
+    color: brand1 !important
+
+.ctaButton:hover::after
+    width: 100%
+
+.ctaButton > *
+    line-height: 1.4em
+
+.oOS, .oOS:hover
+    background: none
+    box-shadow: none
+    color: brand2
+
+
+.ctaBtn 
+    display: inline-block
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shopWidget 
+    display: flex
+    align-items: flex-end
+    flex-wrap: wrap
+    column-gap: 2vw
+    row-gap: 2em
+    @media phoneRule
+        row-gap: 0.5em
+
+
+.shopWidget > div
+    flex: 1 1 30%
+.shopWidget > div.cartAdd
+    flex-basis: 15%
+    padding-left: padXS
+    @media phoneRule
+        padding-left: padM
+
+.shopWidget h2
+    font-size:2.5em
+    @media phoneRule
+        margin-bottom: 0.15em
+
+
+.shopWidget div.cartAdd > div
+    //background-color: brand3
+    //padding: 10px 20px
+    column-gap: 1em
+    justify-content: center
+    align-items: center
+    border-radius: 10px
+    display: inline-flex
+    @media phoneRule
+        margin-bottom: marM
+    
+.shopWidget p.packSize,
+.shopWidget p.offerCopy
+    font-size: 1em
+    font-weight: 500
+    line-height: 1.2em
+    margin-bottom: 1.5em
+    @media phoneRule
+        margin-bottom: 1em
+        font-size: 1.2em 
+
+.shopWidget.hasOffer h2 span.price
+    color: brand2
+.shopWidget.outofstock h2 span.price
+    color: brand5
+
+    
+.shopWidget p.offerCopy
+    @media phoneRule
+        margin-bottom: 1.5em
+.shopWidget p.offerCopy span
+    color: brand2
+    font-weight: 800
+.avail 
+    background-color: brand4
+    text-align: center
+    font-size: 1em
+    font-weight: 600
+    letter-spacing: 0.03em
+    padding: 13px 10px 14px 10px
+    color: white
+    border-radius: 50px
+    margin-top: 1em
+    @media phoneRule
+        margin-top: 0
+        padding-top: 0
+    
+
+.instock .avail
+    background-color: rgba(0, 200, 0, 1.0)
+    @media phoneRule
+        background: none
+        color: rgba(0, 180, 0, 1.0)
+
+.lowstock .avail
+    background-color: rgba(247, 147, 30, 1.0)
+    @media phoneRule
+        background: none
+        color: rgba(247, 147, 30, 1.0)
+
+.outofstock .avail
+    background-color: brand2
+    @media phoneRule
+        background: none
+        color: brand2

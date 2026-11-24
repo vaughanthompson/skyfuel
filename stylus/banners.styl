@@ -1,0 +1,490 @@
+/* banners and tiles */
+
+
+
+
+
+
+.relative 
+    position: relative
+
+.gradientBlackFromBottomAndTop
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0, rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.4) 95%,rgba(0,0,0,0.6))
+
+.gradientBlackFromBottomAndTop2
+    background: linear-gradient(to top, rgba(5,6,81,1.0) 0, rgba(0,30,140,1.0) 50%, rgba(0,30,140,1.0)  80%,rgba(5,6,81,1.0))
+
+.gradientBlackFromBottom 
+    background: linear-gradient(to top, rgba(0,0,0,1.0), rgba(0,0,0,0.0) 30%)
+
+.gradientBlackFromBottom2 
+    background: linear-gradient(to top, rgba(0,0,0,1.0), rgba(0,0,0,0.0))
+
+.gradientBlackFromTop 
+    background: linear-gradient(to bottom, rgba(0,0,0,1.0), rgba(0,0,0,0.0))
+
+.gradientBlackFromTop2 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.0) 10%)
+
+.gradientGreyFromTop 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0.0))
+
+.gradientGreyFromTop2 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.10) 5%, rgba(0,0,0,0.0) 95%)
+
+.gradientBlackFromLeft 
+    background: linear-gradient(to right, rgba(0,0,0,1.0) , rgba(0,0,0,0.0))
+
+.gradientBlackFromTopLeft 
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.0))
+
+.gradientBlackFromBottomLeft 
+    background: linear-gradient(to top right, rgba(0,0,0,0.8), rgba(0,0,0,0.0))
+
+.gradientBlackFromRight 
+    background: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.0) 50%)
+
+.gradientBlackFromRight2
+    background: linear-gradient(to left, rgba(0,0,0,1.0), rgba(0,0,0,0.0))
+
+.gradientBlackFromTopRight 
+    background: linear-gradient(to bottom left, rgba(0,0,0,0.8), rgba(0,0,0,0.0))
+
+.gradientBlackBottomRight 
+    background: linear-gradient(to top left, rgba(0,0,0,0.8), rgba(0,0,0,0.0))
+
+
+
+/* new banners 
+.banner 
+    background-color: brand2
+    @media dtrigger
+        background-color: brand2*/
+.banner,
+.banner a 
+    color: white
+    text-decoration: none
+
+.banner .reversed,
+.banner .reversed a 
+    color: black
+
+.banner.noBgColor
+    background-color: rgba(0,0,0,0) !important
+
+    
+
+
+
+/* banner borders 
+.banner 
+    border-bottom: 1px solid black
+
+@media dtrigger
+    .banner.subHeroBanner:first-child,
+    .banner.tileBanner 
+        border-right: 1px solid black
+    
+    .banner.tileBanner 
+        border-bottom: none
+    
+    .banner.tileBanner:last-child 
+        border-right: none
+*/
+
+
+
+
+/* banner ribbons */
+.overflowHidden 
+    overflow: hidden
+
+.ribbonBase 
+    position: absolute
+    right: -25%
+    width: 100%
+    padding: 1.65vw 0 1vw 0
+    transform: rotate(30deg)
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.5)
+    background-color: black
+    color: white
+    text-align: center
+
+@media mtrigger
+    .ribbonBase     
+        right:-10%
+        bottom: 5%
+        transform: rotate(10deg)
+        box-shadow: 0 20px 10px rgba(0, 0, 0, 0.5)
+        padding: 1.5vh 0 1vh 0
+        font-size: 80%
+        z-index: 1
+        width: 120%
+    
+@media dtrigger
+    .ribbonBase  
+        top: 11%
+    
+
+
+/* new banners typography */
+.banner h1,
+.banner h2,
+.banner h3,
+.banner h4,
+.banner h5,
+.banner h6 
+    margin: 0
+    padding: 0
+    position: relative
+
+
+
+
+
+
+
+
+
+/* width control */
+.heroBanner 
+    width:100%
+
+@media phoneRule
+    .subHeroBanner 
+        width:100%
+    
+@media tabletRule
+    .subHeroBanner 
+        width:100%
+        flex:1 0 50vw
+    
+@media dtrigger
+    .subHeroBanner 
+        width:50vw
+
+@media phoneRule
+    .tileBanner 
+        width:100%
+
+@media tabletRule
+    .tileBanner 
+        width:100%
+        flex:1 0 50vw
+    
+@media dtrigger
+    .tileBanner 
+        width:25vw
+    
+
+
+
+
+
+
+
+
+
+@media phoneRule
+    .bannerContent 
+        padding: 0
+        padding-left: 8vw 
+        padding-right: 8vw
+    
+
+@media tabletRule
+    .bannerContent 
+        padding-left: 5vw 
+        padding-right: 5vw
+    .subHeroBanner .bannerContent 
+        padding-left: 5vw 
+        padding-right: 5vw
+    .tileBanner .bannerContent 
+        padding-left: 5vw 
+        padding-right: 5vw
+    
+@media dtrigger
+    .bannerContent 
+        padding-left: padXL
+        padding-right: padXL
+    .subHeroBanner .bannerContent 
+        padding-left: 5vw 
+        padding-right: 5vw
+    .tileBanner .bannerContent 
+        padding-left: 3vw 
+        padding-right: 3vw
+    
+
+@media lgdesktopRule
+    .bannerContent
+        padding-left: padM
+        padding-right: padM
+        max-width: 2000px
+        margin-left: auto !important
+        margin-right: auto !important
+
+
+
+
+
+.setContentBG 
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+
+.centreMe 
+    align-items: center
+    text-align: center
+
+.bannerLinkImage 
+    display: flex 
+    align-items: center
+    justify-content: center
+    width: 100% 
+    height: 100%
+
+.bannerLinkImage.twoRow 
+    flex-wrap: wrap
+.bannerLinkImage.twoRow > div:last-child
+    align-self: flex-end
+
+/* test banner mode */
+.banner.test .bannerLinkImage > div 
+    border: 1px solid blue
+.banner.test .setContentBG 
+    background-color: rgba(255,255,255,0.2)
+.banner.test .bannerInnerContent 
+    border: 1px solid cyan
+
+
+
+.bannerContent.noPadForce 
+    padding-left: 0 
+    padding-right: 0
+
+.bannerInnerContent 
+    display: flex
+    justify-content: center 
+    align-items: center 
+    width: 100%  
+
+@media phoneRule
+    .bannerInnerContent 
+        height: 60vh
+        padding-top: 5vh
+        padding-bottom: 5vh
+    .tileBanner .bannerInnerContent 
+        height: auto
+    
+
+@media tabletRule
+    .bannerInnerContent 
+        height: 75vh    
+    .heroBanner .bannerInnerContent,
+    .subHeroBanner .bannerInnerContent,
+    .tileBanner .bannerInnerContent 
+        height: 45vw
+    .panel .bannerInnerContent 
+        padding-top: 3em
+        padding-bottom: 3em
+    
+
+@media dtrigger
+    .bannerInnerContent 
+        height: 70vh
+        padding-top: 5vh
+        padding-bottom: 5vh
+    .tileBanner .bannerInnerContent 
+        height: 18vw    
+    .rowBannerHolder 
+        display: flex
+        flex-wrap: nowrap
+    .bannerInnerContent.masthead
+        height: 45vh
+
+
+
+
+
+.overrideHeight 
+    min-height: 10vw
+    height: auto
+    max-height: 100%
+
+.shadowSection 
+    position: relative
+    box-shadow: 0 0px 50px 25px rgba(0, 0, 0,0.4)
+
+.onTop
+    position: absolute
+    z-index: 1
+
+.flexApart
+    display: flex
+    justify-content: space-between
+
+
+
+/* generic classes for flex control - leave last in cascade */
+.columnGap50 {
+    column-gap: 50px;
+}
+.columnGap100 {
+    column-gap: 100px;
+}
+.flexBasis100 {
+    flex:0 1 100% !important;
+}
+.flexBasis90 {
+    flex:0 1 90% !important;
+}
+.flexBasis80 {
+    flex:0 1 80% !important;
+}
+.flexBasis70 {
+    flex:0 1 70% !important;
+}
+.flexBasis60 {
+    flex:0 1 60% !important;
+}
+.flexBasis50 {
+    flex:0 1 50% !important;
+}
+.flexBasis40 {
+    flex:0 1 40% !important;
+}
+.flexBasis30 {
+    flex:0 1 30% !important;
+}
+.flexBasis20 {
+    flex:0 1 20% !important;
+}
+.flexBasis10 {
+    flex:0 1 10% !important;
+}
+.flexBasis5 {
+    flex:0 1 5% !important;
+}
+.alignLeft {
+    justify-content:flex-start;
+}
+.alignRight {
+    justify-content:flex-end;
+}
+.alignTop {
+    align-items:flex-start;
+}
+.alignBottom {
+    align-items:flex-end;
+}
+.justifyCentre {
+    justify-content: center
+}
+.setContentHeight100 {
+    height: 100%;
+}
+.setContentHeight90 {
+    height: 90%;
+}
+.setContentHeight80 {
+    height: 80%;
+}
+.setContentHeight70 {
+    height: 70%;
+}
+.setContentHeight60 {
+    height: 60%;
+}
+.setContentHeight50 {
+    height: 50%;
+}
+.setContentHeight40 {
+    height: 40%;
+}
+.setContentHeight30 {
+    height: 30%;
+}
+.setContentHeight20 {
+    height: 20%;
+}
+.setContentHeight10 {
+    height: 10%;
+}
+.floatRight {
+    float: right;
+}
+
+
+
+/* lineart effects */
+.bannerContent.lineart1
+    background-position: center bottom
+    background-image: url('/images/misc/lineart1.svg')
+    background-size: cover
+    background-repeat: no-repeat
+
+.bannerContent.lineart2
+    background-position: center top
+    background-image: url('/images/misc/lineart2a.svg')
+    background-size: cover
+    background-repeat: no-repeat
+
+.bannerContent.lineart3
+    background-position: center top
+    background-image: url('/images/misc/lineart2b.svg')
+    background-size: cover
+    background-repeat: no-repeat
+
+.bannerContent.lineart4
+    background-position: center top
+    background-image: url('/images/misc/lineart2c.svg')
+    background-size: cover
+    background-repeat: no-repeat
+
+.bannerContent.lineart5
+    background-position: center top
+    background-image: url('/images/misc/lineart2d.svg')
+    background-size: cover
+    background-repeat: no-repeat
+
+.bannerContent.lineart6
+    background-position: center right
+    background-image: url('/images/misc/lineart1.svg')
+    background-size: contain
+    background-repeat: no-repeat
+
+
+
+div.posOverlay 
+    position: relative
+    top:-11vw
+    margin-bottom: -12vw
+    background-image: url('/images/masthead/mastheadOverlay.svg')
+    background-size: 105% auto
+    background-repeat: no-repeat
+    background-position: center top
+    height: 14vw
+    @media phoneRule
+        background-image: url('/images/masthead/mastheadOverlay1-mob@2x.webp')
+        height: 14vh
+
+div.imageOverlay 
+    position: absolute
+    right:5vw
+    //margin-bottom: -12vw
+    background-image: url('/images/masthead/range-shot@2x.webp')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center top
+    width:47vh
+    height: 47vh
+    top:-43vh
+    @media phoneRule
+        right 0
+        width: 100%
+        top:-35vh
+        height: 40vh

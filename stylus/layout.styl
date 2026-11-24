@@ -1,0 +1,1532 @@
+/*! 
+* layout 
+*/
+//core layout
+@media ttrigger  
+    body header
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        flex-wrap: nowrap
+        padding: 5px 0
+        width:100%
+        background-color: brand1
+        z-index 2
+        //border-top: 1px solid whiteAlp50
+        
+    body header.fixed
+        //min-height: navHeightL
+        position: fixed
+        z-index: 2000
+        bottom: 0
+
+    body header.sticky
+        min-height: navHeight
+        position: fixed
+        z-index: 6000
+        padding: padXXS*0.8 0
+        //display: none
+        background-color: brand1
+        top:0
+        
+    body header.stickyStatic
+        min-height: navHeight
+        position: fixed
+        z-index: 5000
+        padding: padXXS*0.8 0
+        background-color: brand2
+    body header > *
+        /* margin-left: marStd*1.5
+        margin-right: marStd*1.5*/
+    body header.fixed nav.navTrigger
+        display: flex
+        width:100%
+        column-gap: 2.5em
+    body header.fixed nav.navTrigger > *
+        flex: 1 1 12.5%
+        text-decoration: none
+
+    body header.fixed nav.navTrigger > *:last-child
+        text-align: right
+        text-decoration: underline
+        border-bottom: none !important
+        font-weight: 400
+
+
+body header.d
+    align-items: center
+    
+
+body header.d > *
+    flex: 1 1 1px;  
+
+body header.d > *:first-child
+    margin-left: marM 
+
+body header.d > *:last-child
+    flex: 1 0 20%
+    margin-right: 0
+    margin-left: marXS
+
+@media lgdesktopRule
+    body header.d > *:last-child
+        flex: 1 0 10%
+    
+
+
+
+
+
+body > main > header,
+body > main > article,
+footer article
+    padding: padXL padL
+    @media dtrigger
+        padding: padL padL*1.5
+    @media lgdesktopRule
+        padding: padL padL*0.75 
+/*    
+main 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1)
+    @media phoneRule
+        //background-color: brand2
+        //padding-top: padXL
+        //margin-top: navHeight
+*/
+body > main > article
+    @media phoneRule
+        margin-bottom: marXL
+body > main > article:last-of-type
+  @media dtrigger
+        padding-bottom: padL
+  
+@media lgdesktopRule
+    #cNav > nav,
+    #dNav > nav,
+    footer article,
+    main > * > *
+        max-width: 2000px
+        margin-left: auto !important
+        margin-right: auto !important
+
+// footer
+footer 
+    //padding-bottom: padM
+    background-color: brand1
+    color: white
+footer > article.footerContent
+    text-align: center
+    @media phoneRule
+        text-wrap: balance
+footer > article.footerContent section
+    @media phoneRule
+        margin-bottom: 2em
+footer div.simpleFlex
+    @media phoneRule
+        display: block
+        text-align: center
+
+footer div.simpleFlex a
+    @media phoneRule
+        display: block
+        margin: 10px 0
+    
+footer div.simpleFlex img
+    @media phoneRule
+        margin-top: 1em
+
+div.footerImage
+    height: 180px
+    background-image: url(/images/footer-desk.svg)
+    background-position: center bottom
+    background-size: cover
+    background-repeat: no-repeat
+    @media phoneRule
+        background-image: url(/images/footer-mob.svg)
+        height: 150px
+    
+
+
+body footer div.siteCredit
+    position: absolute
+    right: 30px
+    bottom: 20px
+    @media phoneRule
+        position: relative
+        bottom:0
+        right: auto !important
+        left: auto !important
+        margin: 20px auto
+        text-align: center
+        border-top: 1px solid brand3
+        padding-top: 1.5em
+body footer div.siteCredit.left    
+    left: 30px
+    right: auto
+
+
+
+main > * > div > div > div > div.control
+    z-index: 5000
+
+a#toTop
+    z-index: 3000 
+footer.relative
+    z-index: 4000
+div.deskNav
+    z-index: 11000
+div.deskNav
+    z-index: 1000
+ div#mNav
+    z-index: 12000   
+div.mblnav,
+div.deskNav
+    z-index: 2000      
+
+// margin padding
+main > *
+    @media phoneRule
+        //{marginM}
+        
+   /* @media tabletRule
+        {marginT} */
+
+
+// flex and columns and grid
+div.content
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    padding: 0
+    @media ttrigger
+        padding: 0 0 0 0
+        column-gap: 2vw
+        flex-direction: row
+        justify-content: space-between
+div.content.rowAlignCentre
+    @media ttrigger
+        align-items: center
+div.content > section
+    @media phoneRule
+        padding: padL
+    @media ttrigger
+        padding: padStd
+        flex: 1 1 auto 
+        flex-basis: 50%
+
+        
+main > *:not(.grid) div.content
+    @media tabletRule
+        flex-wrap: wrap
+main div > header
+    @media phoneRule
+        padding: padL
+    @media ttrigger
+        padding: padM
+    @media tabletRule 
+        padding: padXS padStd padXS padStd
+
+
+
+
+/* 2025 design page grids */
+main > .grid.designThumbs div.content
+    @media mtrigger
+        flex-direction: row 
+        flex-wrap: wrap
+        padding-left: padXS
+        padding-right: paXS
+    @media ttrigger
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr))
+        grid-column-gap: 0
+        grid-row-gap: 1em
+     @media phLandscape
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr))
+        grid-column-gap: 0
+        grid-row-gap: 0
+    @media dtrigger
+        grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr))
+        grid-column-gap: 0
+        grid-row-gap: 1em
+    @media lgdesktopRule
+        grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr))
+        grid-column-gap: 0
+        grid-row-gap: 0
+
+main > .grid.designThumbsLarge div.content
+    @media dtrigger
+        grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr))
+        grid-column-gap: 0
+        grid-row-gap: 1em
+    @media lgdesktopRule
+        grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr))
+        grid-column-gap: 0
+        grid-row-gap: 0
+
+
+main > .grid.designThumbs div.content
+    /*border-left:1px solid blackAlp10
+    border-top:1px solid blackAlp10*/
+    padding-top: 0
+
+main > .grid.designThumbs div.content > section
+    @media mtrigger
+        flex: 0 1 auto
+        flex-basis: 100%
+        margin: marXL marXL 0 marXL 
+        min-height: 20vw
+    @media ttrigger
+        min-height: 27.5vw
+        border-bottom: 1px solid blackAlp10
+        /*border-right: 1px solid blackAlp10*/
+    @media dtrigger
+        min-height: 16.5vw    
+    @media ie 
+        flex-basis: 20%
+        min-height: 20vw
+    @media phLandscape
+        min-height: 25.5vw
+    @media ie
+        height:20em
+
+main > .grid.designThumbs:not(.designThumbsLarge) div.content > section
+    @media phoneRule
+        min-height: 70vw !important
+        border-bottom: 1px solid blackAlp10
+
+main > .grid.designThumbsLarge div.content
+    @media ttrigger
+        column-gap: 3em
+        row-gap: 3em
+
+main > .grid.designThumbsLarge div.content > section
+    @media ttrigger
+        border-bottom: none
+
+main > .grid.designThumbs div.content > section > div,
+main > .grid.designThumbs div.content > section > a
+    display: flex
+    padding: 0
+    align-self: stretch
+    justify-content: flex-end
+    align-items: flex-end
+    flex-direction: column
+    flex: 1 1 auto
+
+
+main > .grid.designThumbs.noFlex div.content
+    row-gap: 5em
+    @media phoneRule
+        row-gap: 2em
+
+main > .grid.designThumbs.noFlex div.content > section
+    display: block
+
+main > .grid.designThumbs.noFlex div.content > section > a.thumbLink
+    margin-bottom: 2em
+
+
+main > .grid.designThumbs.noFlex div.content > section > *:not(a)
+    @media smallDesktop
+        padding-top: 1em
+        padding-bottom: 1em
+    @media effectsBreak
+        padding-left: 12.5% !important
+        padding-right: 15% !important
+
+
+main > .grid.designThumbs.noFlex div.content > section > h3
+    @media phoneRule
+        padding-bottom: 1em
+
+
+
+
+
+
+
+
+
+
+// custom grid
+main > .grid.fancy div.content > section
+        justify-content: flex-start
+        align-items: flex-end
+        flex-basis: 100%
+
+main > .grid.fancy.links div.content > section
+    @media mtrigger
+        background-color: blackAlp50
+
+/* 
+main > .grid.fancy.links div.content > section a > p
+    @media mtrigger
+        display: none
+*/
+main > .grid.fancy.filled div.content > section
+        background-color: white
+
+main > .grid.fancy div.content > section:nth-child(1)
+    @media dtrigger
+        grid-column: 1 / 3
+        grid-row: 1 / 3
+main > .grid.fancy div.content > section:nth-child(10)
+    @media dtrigger
+        grid-column: 5 / 7
+        grid-row: 1 / 4
+main > .grid.fancy div.content > section > div,
+main > .grid.fancy div.content > section > a
+    justify-content: flex-start
+    align-items: flex-start
+    @media mtrigger
+        padding: padXL padL
+    @media dtrigger
+        justify-content: flex-end
+/*
+@media mtrigger
+    main > .grid.fancy div.content > section > a
+        padding: 0
+        margin: 0
+        padding-top: 25vw
+        display: flex
+        flex-direction: column-reverse
+    main > .grid.fancy div.content > section > a > *
+        background-color: mainBG
+        color: brand1
+        flex-basis: 100%
+        margin:0
+        max-width: 100%
+        width:100%
+  
+        border: 1px solid blue
+*/        
+
+
+
+@media dtrigger
+    main > .grid.fancy div.content > section > a > p
+        opacity: 0
+    main > .grid.fancy.links div.content > section > a:hover
+        background-color: blackAlp75
+    main > .grid.fancy.links div.content > section > a:hover p
+        opacity: 0.9
+      
+
+@media ie
+    .grid div.content
+        display: flex
+        flex-wrap: wrap
+        flex: 1 1 auto
+    .grid div.content > section
+        flex-basis: 25%
+        margin: marXXS
+    .grid div.content > section > *:first-child
+        flex-wrap: wrap
+        padding:10%
+        width:80%
+
+
+// inset body copy control
+
+.copy div.content > section
+    max-width: 90%
+    flex-basis: 90%
+    @media phoneRule
+        padding: 10vw
+    @media tabletRule
+        padding-left: 10vw
+        padding-right: 10vw
+    @media dtrigger
+        padding-left: 22vw
+        padding-right: 22vw
+        
+
+.copyMulti div.content > section
+    @media dtrigger
+        padding: padXS padM padXS padM 
+        
+.copyMulti div.content > section:first-of-type
+    @media dtrigger
+        padding-left: 0 
+        margin-left: padL 
+.copyMulti div.content > section:last-of-type
+    @media dtrigger
+        padding-right: padL
+
+
+
+div.selections
+    @media phoneRule
+        padding: padXL padXL 0 padXL
+div.selections div.selectionsHeader
+    justify-content: flex-start
+    align-items: flex-end
+    column-gap: 0
+    @media phoneRule
+        display: block
+div.selections div.selectionsContent
+    justify-content: flex-start
+    column-gap: 0
+    @media phoneRule
+        display: block
+        
+div.selections div.selectionsHeader section
+div.selections div.selectionsContent section
+    flex:0 1 auto
+    @media phoneRule
+        padding-top: padL
+        padding-right: 0
+        padding-left: 0
+div.selections div.selectionsHeader section:first-of-type,
+div.selections div.selectionsContent section:first-of-type
+    flex-basis: 100px
+    flex-shrink: 0
+div.selections div.selectionsContent section:first-of-type
+    @media phoneRule
+        display: none
+div.selections div.selectionsHeader section:last-of-type
+div.selections div.selectionsContent section:last-of-type
+    padding-left: 0
+    margin-right: 100px + padL
+    flex-basis: 100%
+    @media phoneRule
+        margin-right: 0
+
+div.selections div.selectionsHeader section
+    border-bottom: 3px solid brand4
+div.selections div.selectionsHeader section:first-of-type
+    border-bottom: none
+div.selections.inactive div.selectionsHeader section
+    border-bottom-color: brand1
+div.selections.inactive div.selectionsHeader 
+    opacity: 0.1
+div.selections.inactive div.selectionsContent 
+    display: none
+
+div.selections div.content.selectionsHeader
+    padding-top: 0
+
+
+
+
+
+
+// alert bar
+#alert
+    padding: padXS padXS 0 padXS
+#alert div.content
+    // background-color: blackAlp10
+    border-bottom: 4px solid brand1
+    @media mtrigger 
+        border:none
+        background-color: white
+        {marginALL}
+        padding: padM padStd 
+#alert div.content > section
+    padding: padXXS padStd*1.75 0 padM*1.25
+    @media dtrigger
+        padding: padStd padXS*1.5 padStd padStd
+        max-width: 95%
+#alert.center div.content,
+#alert.center div.content > section
+    text-align: center
+
+
+
+// navs
+#navSpacer
+    height: navSpacer
+    width: 100vw
+    background-color: white
+    @media phLandscape
+        height: navSpacerL
+#mNav
+    background-color: white
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1)
+    height: navSpacer
+    width: 100vw
+    position fixed
+    padding 0 !important
+    margin 0
+    overflow hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    @media phLandscape
+        height: navSpacerL
+#cNav,
+#dNav
+    padding: 20px padStd
+    background-color: white
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1)
+#mNav nav,
+#cNav nav,
+#dNav nav
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    flex: 1 1 auto
+#mNav nav
+    padding: 0 padL 0 padM
+    align-items: center
+    @media phLandscape
+        padding: 0 padM
+        padding-left: 0
+#mNav nav > *:first-child
+    margin-right:auto
+#mNav nav > div:nth-child(3)
+    margin-left: 15px
+#cNav nav,
+#dNav nav
+    // border-bottom: 2px solid brand1   
+#cNav nav
+    padding: 0 padStd
+    align-items: center
+#dNav nav
+    padding: padStd
+
+#mNav.alt,
+#cNav.alt
+    background-color: brand2
+    color: white
+#mNav.alt h2,
+#cNav.alt h3
+    color: brand3
+
+#mNav.alt #navTrigger,
+#mNav.alt #navClose
+    color: white
+
+nav div
+    display: flex
+    justify-content: space-between
+    align-items: center
+    column-gap: 1em
+nav div:last-child
+    align-items: center
+    column-gap: 1.5em
+nav div > *
+    padding: 0
+    margin: 0
+nav div.tagline
+    display: flex
+    justify-content: flex-start
+    align-items: baseline
+    column-gap: 2em
+    padding-bottom: 5px
+
+nav.shopStrip
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    column-gap: 10px
+    row-gap: 10px
+    justify-content: center
+    padding: padStd
+    padding-top: 2em
+    margin-bottom: 0.4em
+    @media ttrigger
+        margin-bottom: 0.8em
+    @media tabletRule
+        display: none
+    @media medDesktop
+        padding-left: 15vw
+        padding-right: 15vw
+
+
+
+
+
+
+
+// mobile nav
+.navHeight
+    height: navHeight
+
+#navHeader
+    position: fixed
+    z-index: 7000
+    right:0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    @media mtrigger
+        left 0
+        width 100%
+        padding-left: 0
+        background-color: brand1
+#navHeader div#mblNavControl
+    display: flex
+    align-items: center
+    column-gap: 5vw
+#navHeader div#mblNavControl a .icon-ic-menu:before,
+#navHeader div#mblNavControl a .icon-ic-close:before    
+    color: brand2
+#navHeader div#mblNavControl a .icon-ic-menu.darker:before
+    color: brand2
+
+
+
+@media mtrigger
+    div#dNav,
+    div#cNav
+        display: none;
+@media dtrigger
+    div#mNav,
+    div#navSpacer
+        display: none;
+
+//mobile nav drawer
+div.navSpace
+    height: navSpacer
+    @media phLandscape
+        height: navSpacerL
+div.mblnav,
+div.deskNav
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: brand1
+div.mblnavContainer
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    /* The main point: */
+    overflow-y: auto
+    /* Optional but highly reccomended: enables momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch
+div.deskNav div.containMNav
+    padding: 5vw 30vw
+    text-align: center
+div.deskNav div.containMNav nav
+    display: flex
+    flex-direction: column
+div.mblnav div.containMNav
+    padding: 5vw 10vw
+div.mblnav div.containMNav nav
+    display: flex
+    flex-wrap: wrap
+    column-gap: 2vw
+
+.open
+    opacity: 1 !important
+div.mblnavSection
+    padding: padL 
+    {marginVT}
+//@media mtrigger
+html.noscroll 
+    overflow: hidden
+body.noscroll
+    overflow: visible
+    height: 100%
+
+
+// picturefill and image based sections
+main > * > div.picturefill-background div.content
+    min-height: 60vh
+    justify-content: center
+    align-items: flex-start
+    @media ie
+        height:35em
+    @media tabletRule
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+    @media dtrigger 
+        justify-content: flex-end
+        align-items: center
+
+/* main > * > .btm div.content
+    justify-content: flex-end
+    align-items: flex-start
+    @media tabletRule
+        justify-content: flex-end
+        align-items: flex-start
+        flex-direction: column
+    @media dtrigger 
+        align-items: flex-end !important
+*/
+main > * > div.picturefill-background.full div.content,
+main .full div.content
+    min-height: 60vh
+    @media ie
+        height:40em
+    @media dtrigger 
+        min-height: 60vh
+    @media tabletRule
+        align-items: flex-start
+main > * > div.picturefill-background.top div.content
+    align-items: flex-start      
+main > * > div.picturefill-background div.content section 
+    @media tabletRule
+        flex:0 0 80% !important 
+main > * > div.imageBlocks section
+    min-height: 40vh 
+    @media dtrigger 
+        min-height: 20vw
+    @media ie 
+        min-height: 21em    
+main > * > div.imageBlocks section
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: flex-start
+    @media phoneRule
+        //{marginM}
+        padding: padXL !important
+        margin: marXL marXL 0 marXL
+    @media tabletRule
+        {marginT}
+        padding-top: padL !important
+        padding-bottom: padL !important
+    @media dtrigger 
+        margin-bottom: 0
+        padding-top: padL*0.9 !important
+        padding-bottom: padM*0.9 !important
+main > * > div.picturefill-background div.content/*,
+main > * > div.imageBlocks section > *:last-child*/
+    padding-bottom: padL
+    padding-top: padL
+    @media phoneRule
+        padding-bottom: padXL
+        padding-top: padXL
+main > * > div.imageBlocks section > a.cta
+   margin-top: auto
+
+div.picturefill-background.contain
+    background-size: contain
+
+div.picturefill-background.width80
+    background-size: 80% auto
+
+div.picturefill-background.right
+    background-position: right
+
+
+
+.simpleFlex
+    display: flex
+    flex-wrap: nowrap
+    column-gap: 20px
+    align-items: center
+    @media phoneRule
+        display: block
+
+
+.simpleFlex.noSpace
+    column-gap: 0
+.simpleFlex.stayFlexed
+    @media phoneRule
+        display: flex !important
+
+
+.simpleFlex.flexSpaced 
+    column-gap: 4vw
+.simpleFlex.flexSpacedTight
+    column-gap: 3vw
+    @media phoneRule
+        //display: block
+        justify-content: space-between
+footer .simpleFlex.flexSpaced 
+    column-gap: 3vw
+.simpleFlex.centered 
+    justify-content: center
+.simpleFlex.centeredVert 
+    align-items: center
+.simpleFlex.alignTop 
+    align-items: flex-start
+.simpleFlex.alignBottom 
+    align-items: flex-end
+.simpleFlex.alignRight 
+    justify-content: space-between
+.simpleFlex.alignLeft 
+    justify-content: flex-start
+
+// cat
+i.toggleIcon:before
+    font-family: 'icomoon'
+    content: '\e904'
+    font-size: 1em
+i.toggleIcon.upDown:before
+    font-family: 'icomoon'
+    content: '\e907'
+@media phoneRule
+    .toggleIcon
+    a.slideToggleTrigger
+        display: none
+    div.catGroup a.catItem,
+    div.catGroup div.catItem
+        display: block
+        //padding: padXL
+        margin: marL 0 marXL 0
+    div.catList
+        margin-bottom: marXL*2
+    .catItem h6
+        font-weight: 700
+    div.imageThumb
+        //height: 40vw !important
+        //margin-bottom: 5vh !important
+    div.landing div.imageThumb
+        max-width: 100vw  !important
+        height:60vw !important
+
+
+
+.catItem a,
+.catItem:hover a h6
+    text-decoration: none !important
+.catItem:hover a h3
+    //text-decoration: none
+.catItem a div:last-of-type
+    padding: 0 0 0 padXS
+    @media phoneRule
+        padding: 0 0 0 padM
+
+.catItem a div:last-of-type > *
+    margin-bottom: marXXS
+.catItem span.cta
+    display: flex
+    text-align: center
+    //column-gap: 10px
+    align-items: center
+    justify-content: center
+    width:100%
+    padding: 0
+    margin-top: marXS
+    margin-bottom: 0
+.catItem span.cta > *
+    margin-bottom: 0
+@media phoneRule
+    .catItem span.cta
+        padding-top: marL
+
+div.keyStats
+    margin-top: 0.5em
+div.keyStats p
+    font-weight: 400
+    margin: 0
+    max-width:80%
+div.keyStats span
+    text-transform: uppercase
+    font-size: 0.75em
+    letter-spacing: 0
+    font-weight:500
+    display: block
+    color: brand2
+
+div.imageThumb
+    aspect-ratio: 1 / 1
+    //background-color: blackAlp5
+    background-size: 90%
+    background-position: center
+    background-repeat: no-repeat
+    margin-bottom:1.2em
+    border-radius: 20px 0 20px 0
+    border: 1px solid brand2
+
+
+
+div.catList
+    @media ttrigger
+        margin-top: marStd
+        margin-bottom: marStd
+
+div.catList > h2
+div.catList > h5
+.loadMore
+    text-align: center
+div.catList > h5
+    font-weight: 400
+    margin-top: 10px
+div.catList p.alsoBought
+    font-size: 1.2em
+    margin-top: -30px
+    margin-bottom: 20px
+
+@media phoneRule
+    .bundles img.imageThumb 
+        max-width: 160px
+
+@media ttrigger
+    .bundles img.imageThumb 
+        max-height: 160px
+        width: auto
+
+@media ttrigger
+    div.catList div.catGroup
+        display: grid
+        //display: flex
+        flex-wrap: wrap
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
+        justify-content: flex-start
+    div.catList .catItem
+        flex:0 1 19vw
+    div.catList.bundles div.catGroup
+        display: block 
+    div.catList.bundles .catItem
+        margin-bottom: marL
+        border-radius: 10px
+        padding-bottom: padM
+        padding-top: padM
+        justify-content: flex-start
+        min-height:30vw
+@media dtrigger
+    div.catList div.catGroup
+        //display: grid
+        grid-column-gap: 0;
+        grid-row-gap:1em;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr) )
+        grid-auto-flow: row dense
+        grid-auto-rows: min-content
+        justify-content: flex-start
+    div.catList .catItem
+        flex:0 1 16vw
+    div.catList.bundles div.catGroup
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) )
+    div.catList.bundles .catItem
+        margin-bottom: 0
+@media lgdesktopRule
+    div.catList .catItem
+        flex:0 1 19%
+
+div.catGroup .catItem
+    border: 1px solid white
+    border-radius: 20px 0 20px 0
+    //box-shadow: 0px 10px 30px 0px blackAlp20
+    padding: padStd padStd padStd padStd
+    transition: 0.3s
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    //align-items: center
+    justify-content: space-between
+    position: relative
+    //text-align: center
+
+
+@media dtrigger and (pointer: fine)
+    div.catGroup .catItem:hover
+        transform: translateY(-0.4em) 
+        box-shadow: 0px 10px 20px 0px blackAlp10
+    .bundles div.catGroup .catItem:hover
+        transform: translateY(0) 
+        box-shadow: 0px 10px 30px 0px blackAlp20
+div.catGroup .catItem > a
+    width: 100%
+
+
+/* offers and shop status styling */
+.offer,
+.offer > *
+    color: offer !important
+//.priceOffer h3,    
+.priceOffer div.keyStats *
+    color: offer !important
+.priceOffer
+    border: 2px solid offer !important
+.highlight
+    //border: 2px solid brand2 !important
+
+.otherOffer div.keyStats p span
+    color: gold !important
+.otherOffer
+    //border: 2px solid brand2 !important
+
+.highlightSiteWide div.keyStats p span
+    color: brand2 !important  
+
+.priceOfferSiteWide div.keyStats p span
+    color: offer !important  
+
+.highlight div.keyStats p span
+    color: brand2 !important
+.poa h3,   
+.poa div.keyStats *
+    color: brand2 !important
+.inactive *,     
+.inactive div.keyStats *
+    color: blackAlp25 !important
+
+div.lozenge
+    background-color: brand0
+    color: white
+    display: block
+    position absolute
+    top:0
+    right: 0
+    padding: padXXS*0.75 padXXS
+    //width: 100%
+    text-align: center
+.messageArea
+    background-color: brand0
+    color: white
+    margin-top:marXXS
+    margin-bottom:marXXS
+    padding: padXXS padXS
+    font-size:1.1em
+    line-height:1.4em
+    border-radius:4px
+.messageArea.system
+    background-color: white
+    color: brand1
+    border-radius:0px
+    border-left:2px solid brand0
+    font-size:1em
+    //padding-left: 0
+.messageArea.otherOffer,
+.otherOffer div.lozenge
+    background-color: gold
+    color: white
+.messageArea.highlight,
+.highlight div.lozenge,
+.highlightSiteWide div.lozenge
+    background-color: brand1
+    color: white
+.messageArea.priceOffer,
+.priceOffer div.lozenge,
+.priceOfferSiteWide div.lozenge
+    background-color: offer
+    color: white
+.messageArea.system span.cta
+    display: flex
+    align-items: center
+    column-gap: 4px
+    margin-top:marXXS*0.5
+.messageArea.system .ctaButton
+    margin-bottom: 0
+.avails 
+    margin-bottom: marXXS
+.instock i
+    color: good
+.instockLow i
+    color: ok
+.ltdStock i
+    color: amber
+.oos i
+    color: alert
+
+div.pricePoint 
+    display: flex
+    align-items: baseline
+    column-gap: 1vw
+
+
+div.spaceBetween
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+/* oil finder control */
+.findOil input[type=text]
+    margin: 0
+    width: 90%
+@media phoneRule
+    .findOil .ctaShop
+        width: 90%
+        margin-top: 1vh
+    .findOil div.content
+        display: block
+        text-align: center
+    .findOil div.productPage
+        padding-top: padL
+        padding-bottom: padStd*1.2
+@media medDesktop
+    .findOil div.content
+        display: block
+        text-align: center
+        width:60vw
+        margin: 0px auto
+@media ttrigger
+    .findOil div.content section
+        padding-top: padStd
+        padding-bottom: padStd*1.2
+    .findOil div.productPage
+        padding: padStd padStd padStd*1.2 padStd
+    .findOil input[type=text]
+        margin: 0
+        width: 85%
+
+.miniRego h4 
+    //max-width: 20vw
+.miniRego .findOil
+    border-radius: 10px
+    margin-bottom: 10px
+    padding: 15px 20px
+    @media phoneRule
+        text-align: center
+.miniRego .findOil input[type=text]
+    width: 200px
+    @media phoneRule
+        width: 100%
+.miniRego .findOil
+    @media phoneRule
+        width: 100%
+
+
+/* brands strip */
+.brandStrip div.content
+    align-items: center
+    justify-content: space-between
+.brandStrip div.flexSpaced > *
+.brandStrip a
+    text-decoration: none !important
+.brandStrip a span
+    display: block
+    text-decoration: none !important
+    font-size: 1.2em
+    line-height: 1.4em
+.brandStrip a img
+    height: 50px
+    width: auto
+@media phoneRule
+    .brandStrip div
+        display: flex
+        flex-wrap: wrap
+        justify-items: space-around
+        row-gap: 1em    
+    .brandStrip a img
+        max-height: 45px !important
+    .brandStrip h4 br
+        display: none;
+    .brandStrip h4
+        //display: none
+    .brandStrip a span
+        font-size: 1em
+        line-height: 1.2em
+@media ttrigger
+    .brandStrip
+        //padding-left: padL
+        //padding-right: padL
+        padding-left: 0
+        padding-right: 0
+    .brandStrip div.content
+        justify-content: center
+        column-gap: 4vw
+    .brandStrip div.content section
+        padding: padStd
+        flex: 0 1 1px
+    .brandStrip div.content section:first-of-type
+        padding-right: 0
+    .brandStrip div.content section:last-of-type
+        //flex-basis: 30vw
+        padding-left: 0
+    .brandStrip div.content section:last-of-type h4
+        margin-left: auto
+@media medDesktop
+    .brandStrip section
+        //{test}
+    .brandStrip a img
+        height: 45px
+        width: auto
+    .brandStrip h4 br
+        display: none;
+    .brandStrip div.content
+        display: block
+    .brandStrip section > div.simpleFlex
+        justify-content: center
+    .brandStrip div.content section:first-of-type
+        padding-top: padM
+        padding-bottom: padM
+        padding-left: 0
+    .brandStrip div.content section:last-of-type
+        padding-top: 0
+    .brandStrip div.content section:last-of-type h4
+        margin-left: 0
+    .brandStrip a span
+        font-size: 1em
+        line-height: 1.2em
+    .brandStrip div.miniRego
+        display: flex
+        align-items: center
+        column-gap: 3vw
+    .brandStrip div.miniRego div.findOil
+        padding: 8px 8px 5px 8px
+
+
+
+/* shell product page layout */
+article.productInfo
+    @media phoneRule
+        text-align: center
+
+
+/* basic sidebar page layout */
+article.basicContent header
+    padding-top: padL
+article.basicContent header.halfW    
+    @media dtrigger
+        padding-right: 30vw
+        
+
+article.basicContent hr 
+    margin: 2em 0 3em 0
+@media dtrigger
+    article.basicContent div.content
+        flex-wrap: wrap
+    article.basicContent header
+        flex: 1 0 100%
+        padding-bottom: 0
+        padding-top: padL
+    article.basicContent section
+        flex: 0 1 48%
+        margin-bottom: 2em
+        border-radius: 1em
+    article.basicContent section.fullW
+        flex-basis: 100%
+    article.sidebar section
+        flex: 1 1 50%
+    article.sidebar section:first-of-type
+        flex-basis: 20%
+    article.sidebar.revMob section:first-of-type
+        flex-basis: 40%
+    article.sidebar.flip section:first-of-type
+        flex-basis: 50%
+    article.sidebar.flip section:last-of-type
+        flex-basis: 20%
+    article.revMob div.content
+        flex-direction: row-reverse
+        align-items: flex-start
+    article.basicContent.revMob div.content section:first-of-type
+        padding: 0
+        
+    article.basicContent.revMob div.content section:last-of-type
+        border-right: 1px solid brand3
+        border-radius: 0
+    article.basicContent.revMob.noBorder div.content section:last-of-type
+        border-right: none
+        
+
+/* contact */
+
+.newForm .simpleFlex
+    @media phoneRule
+        display: block
+
+/* card stylying */
+.card > div
+    box-shadow: 0 5px 25px 0px blackAlp15
+    border: 1px solid
+    border-bottom-color: #f1f1f1
+    border-right-color: #f1f1f1
+    border-left-color: white
+    border-top-color: white
+    background-color: #fefefe
+    padding: padStd padStd
+    @media phoneRule
+        padding: 0
+        box-shadow: none
+        border: none
+
+.card > div:first-of-type
+    border-radius: 20px 20px 0 0
+
+.card > div:last-of-type
+    border-radius: 0 0 20px 20px
+
+.card > div:nth-child(1):nth-last-child(1),
+.card > div:nth-child(1):nth-last-child(1) ~ div
+    border-radius: 20px 20px 20px 20px
+
+.card > div.brand9bg
+    @media phoneRule
+        padding: padL
+        border-radius: 10px !important
+.card > div.brand9bg > div div:last-of-type
+    @media phoneRule
+        margin-top: marM
+.card > div.brand9bg h6
+    @media phoneRule
+        display: inline
+
+table.listItems
+    font-size:1.1em
+    width: 100%
+
+
+
+table.listItems td
+    padding: 10px
+    border-bottom: 1px solid brand3
+table.listItems.cart td
+    padding: 5px 10px
+    border: none
+    @media phoneRule
+        padding-left: 0
+        padding-right: 0
+        position: relative
+table.listItems thead
+    @media phoneRule
+        display: none
+table.listItems tbody td
+    padding: 20px 10px
+    @media phoneRule
+        padding: 10px 5px 5px 5px
+        display: block
+        border:none
+table.listItems.cart:not(.summaryTable) tbody tr td
+    @media phoneRule
+        //display: inline
+table.listItems.cart:not(.summaryTable) tbody tr td:first-of-type
+    @media phoneRule
+        display: block
+        margin-top: marL
+        margin-bottom: marXS
+table.listItems tbody tr td:first-of-type
+    @media phoneRule
+        margin-top: 0
+table.listItems tbody tr td:last-of-type
+    @media phoneRule
+        border-bottom: 1px solid brand1
+        padding-bottom: padXL
+        padding-top: padL
+        margin-bottom: marM
+table.listItems.cart td .ctaButton.nowrap
+table.listItems.cart td div.forms
+    @media phoneRule
+        position: absolute
+        right: 0
+table.listItems.cart td br
+    @media phoneRule
+        {test}
+        display: none
+table.listItems tr:last-of-type td
+    border-bottom: none  
+
+table.listItems tbody td:last-child
+    @media ttrigger
+        text-align: right
+
+@media phoneRule
+    table.listItems.orderHistory td > *:before
+        display: block
+        font-size: 0.9em
+        color: brand1
+    table.listItems.orderHistory td:nth-child(1) > *:before
+        content: 'Date'
+    table.listItems.orderHistory td:nth-child(2) > *:before
+        content: 'Order ID'    
+    table.listItems.orderHistory td:nth-child(3) > *:before
+        content: 'Items'  
+    table.listItems.orderHistory td:nth-child(4) > *:before
+        content: 'Price'  
+    table.listItems.orderHistory td:nth-child(5) > *:before
+        content: 'Status'  
+
+.listItems.cart.summaryTable
+    @media phoneRule
+        margin-top: marL
+.listItems.cart.summaryTable td
+    @media phoneRule
+        padding: 0
+        border-bottom: none
+table.listItems.summaryTable tr:last-of-type td:last-child
+    @media phoneRule
+        border-bottom: 4px solid brand1 
+        padding-bottom: padXL
+
+/* checkout custom */
+.accountSignIn div.signInHidden
+    margin-top:1em;
+
+tr.spanRowCentered td
+    text-align: center !important
+
+tr.relatedProduct.spanRowCentered td    
+    @media phoneRule
+        border-bottom: none !important
+        padding: 0 !important
+
+tr.relatedProduct.spanRowCentered td a.ctaButton
+    margin: 0 marStd
+    @media phoneRule
+        display: block
+        margin-top: 1em
+        margin-bottom: 1em
+
+tr.relatedProduct.spanRowCentered td a:not(.ctaButton)
+    @media phoneRule
+        display: none
+tr.relatedProduct:last-of-type
+    @media phoneRule
+        display: flex
+        flex-wrap: nowrap
+        column-gap: 1em
+
+
+tr.spanRowLeft td
+    text-align: left !important
+
+.inActive
+    opacity: 0.25
+.cartTotals
+    padding: 10px
+    @media phoneRule
+        padding:0
+        margin-top: marXL
+
+
+
+
+.cartOverrides section.cartPanel
+    @media dtrigger
+        position: sticky;
+        top: 2em
+
+.simpleFlex.centeredVert
+    @media phoneRule
+        text-align: center
+.simpleFlex.centeredVert > span.smaller
+    @media phoneRule
+        display: block
+        text-align: center
+        margin-top: 1em;
+
+.insetContent
+    @media dtrigger
+        max-width:50%
+        margin: 0px auto
+
+.hasSidebar
+    {test}
+    @media dtrigger
+        display: flex
+        justify-content: space-between
+.hasSidebar > div
+    {test}
+    @media dtrigger
+        flex-basis: 35%
+.hasSidebar > div:first-of-type
+    @media dtrigger
+        flex-basis: 60%
+article.content .hasSidebar 
+    @media dtrigger
+        column-gap: 3vw
+article.content .hasSidebar > div:first-of-type
+    @media dtrigger
+        flex-basis: 20%
+article.content .hasSidebar > div:last-of-type
+    @media dtrigger
+        flex-basis: 55%
+article.content .hasSidebar.flip
+    @media dtrigger
+        flex-direction: row-reverse
+
+.twoCol
+    @media dtrigger
+        display: flex
+        justify-content: flex-start
+        column-gap: 5vw
+.twoCol > div
+    @media dtrigger
+        flex-basis: 25%

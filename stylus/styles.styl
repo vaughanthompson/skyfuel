@@ -1,0 +1,115 @@
+// libs and default 3rd party
+@import 'nib'
+// @import '../css/normalize.css'
+// setup
+@import '../fonts/Montserrat/montserratCustom.css'
+@require 'defaults.styl'
+// block, elements
+@require 'forms.styl'
+@require 'layout.styl'
+// typography, links, icons
+@require 'typo.styl'
+// custom elements
+@require 'elements.styl'
+// banners
+@require 'banners.styl'
+// 2024
+//@require '2024.styl'
+
+
+
+// custom modifiers & effects 
+.content hr 
+    border-bottom: 2px solid brand1
+
+/* effects */
+.overlay
+    background-blend-mode: overlay
+.multiply
+    background-blend-mode: multiply
+    /*background-color: blackAlp25*/
+.multiply0
+    background-color: blackAlp10
+.multiply1
+    background-color: blackAlp25
+.multiply11
+    background-color: blackAlp50    
+.multiply2
+    background-color: blackAlp75
+.multiply3
+    background-color: brand3Alp
+.multiply4
+    background-color: brand3edit
+.multiply5
+    background-color: brand1edit
+.multiply6
+    background-color: brand3edit1    
+.lighten1
+    background-color: rgba(255,255,255,0.75)
+    background-blend-mode: overlay
+    filter:grayscale(100%)
+.lighten2
+    background-color: rgba(255,255,255,0.85)
+    background-blend-mode: overlay
+    filter:grayscale(80%)
+.gradient1
+    background-blend-mode: multiply
+    background: linear-gradient(to top right, brand3, blackAlp50, blackAlp25, blackAlp10)
+.gradient2
+    background-blend-mode: multiply
+    background: linear-gradient(to top right, brand1, blackAlp25, blackAlp10)    
+
+.gradientBlackFromBottom {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.0)25%);
+}
+.gradientBlackFromTop {
+    background: linear-gradient(to bottom, rgba(0,0,0,1.0), rgba(0,0,0,0.3), rgba(0,0,0,0.0)20%);
+}
+.gradientBlackFromTop2 {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.0) 10%);
+}
+.gradientGreyFromTop {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0.0));
+}
+.gradientGreyFromTop2 {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.10) 5%, rgba(0,0,0,0.0) 95%);
+}
+.gradientBlackFromLeft {
+    background: linear-gradient(to right, rgba(0,0,0,0.8) , rgba(0,0,0,0.0) 50%);
+}
+.gradientBlackFromTopLeft {
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromBottomLeft {
+    background: linear-gradient(to top right, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromRight {
+    background: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.0) 50%);
+}
+.gradientBlackFromTopRight {
+    background: linear-gradient(to bottom left, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackBottomRight {
+    background: linear-gradient(to top left, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackGreyFromLeft {
+    background: linear-gradient(to right, rgba(0,0,0,1.0) 15%, rgba(26,26,26,0.3) );
+}
+
+
+
+
+
+
+
+// last in the cascade - highest prio
+.m
+    @media screen and (min-width: mBreakPoint)
+        display: $hideItAll
+.d
+    @media screen and (max-width: mBreakPoint)
+        display: $hideItAll
+body.hideCartMob div.mobileCart
+    display: $hideItAll
+
+

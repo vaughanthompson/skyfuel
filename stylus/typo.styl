@@ -1,0 +1,690 @@
+/*! 
+* typography 
+*/
+
+
+a:link, a:visited
+    text-decoration: underline
+a.icon
+    text-decoration: none
+a:link,
+.rev a:link,.rev span,
+.mblnav a:link, .mblnav a:visited
+    color: brand1
+a:visited, .rev a:visited
+    color: brand1
+a:hover, a:active
+    text-decoration: none
+#cNav.alt nav a:link:not(.ctaButton),
+#cNav.alt nav a:visited:not(.ctaButton)
+    color: white
+
+/*p a:link, p a:visited
+    color: brand2
+
+p a:hover, p a:active
+    color: brand3
+*/
+ul a:link, ul a:visited
+    color: brand1
+    text-decoration: none
+    padding: padXS 0 0 0
+    letter-spacing: 0 
+    display: inline-block
+
+nav a:link
+    font-weight: 600
+nav a:link.activeLink, nav a:visited.activeLink
+    padding-bottom: padXS*0.7
+    color: brand3
+    border-bottom: 3px solid brand3
+.mblnavContainer
+    color: white !important
+.mblnavSection a:not(.ctaButton),
+.mblnavSection a:visited:not(.ctaButton)
+    display: block
+    line-height: 1.4em
+    margin-bottom: 12px
+    padding-bottom: 10px
+    text-decoration: none
+    border-bottom: 1px solid brand3
+    font-size: 1.1em
+    color: brand2 !important
+    @media phoneRule
+        border-bottom: none
+        padding-right: 15px
+        margin-bottom: 0
+        padding-bottom: 0
+
+.mblnavSection a:hover:not(.ctaButton) 
+    color: white !important
+.mblnavSection a:not(.ctaButton):last-child,
+.mblnavSection a:visited:not(.ctaButton):last-child
+    border-bottom: none
+
+
+.mblnavSection
+    font-size: 1em
+a.cart
+    @media phoneRule
+        display: none !important
+
+#navHeader a:link,
+#navHeader a:visited,
+footer a:link,
+footer a:visited
+    color: brand2
+footer a:link,
+footer a:visited
+    text-decoration: underline
+#navHeader a:hover,
+#navHeader a:hover
+    color: white
+
+
+
+
+
+
+
+
+main .content ul a:link,  main .content ul a:visited
+    text-decoration: underline
+
+
+
+.rev h1,.rev h2,.rev h3,.rev h4,.rev h5,.rev h6,
+.rev .h1,.rev .h2,.rev .h3,.rev .h4,.rev .h5,.rev .h6,
+.rev p,.rev li,.rev a,.rev td
+    color: white
+.huge
+    letter-spacing: -0.06em
+
+
+
+/*
+input[type=radio] 
+    accent-color: red
+*/
+ul.vanilla
+ul.vanilla li 
+    border: none
+ul.vanilla
+    margin-top: 0
+ul.vanilla li 
+    padding:padXXS
+
+ul.noBullet li 
+    list-style-type: none
+    padding-left: 0
+    margin: 0
+    line-height: 1.2em
+    @media phoneRule
+        line-height: 1.5em
+        margin-top: 0.5em
+ul.compact li
+    padding-top: 0
+
+ul.rowItem a:link, ul.rowItem a:visited,
+table.listItems a:link, table.listItems a:visited
+    padding: 0
+    font-size: 1em
+
+ul.rowItem .ctaButton,
+table.listItems .ctaButton
+    text-decoration: none !important
+
+ul.rowItem
+    margin: 0
+
+nav.shopStrip h4
+    margin: 0
+    font-weight: bold
+    padding-right: 5px
+
+nav.shopStrip a
+    white-space: nowrap
+
+.largeResponsive
+    font-size: 4.5vw
+    line-height: 1em
+    margin-bottom: 5px
+    letter-spacing: -0.06em
+    @media phoneRule
+        font-size: 4.5vh
+
+.largerResponsive
+    font-size: 5.5vw
+    line-height: 1em
+    margin-bottom: 5px
+    letter-spacing: -0.06em
+    @media phoneRule
+        font-size: 4.5vh
+
+.bundles .catItem h1
+.bundles .catItem h5
+    text-wrap: balance
+.bundles .catItem h5
+    font-size: 1.1em
+
+
+a.redLink:link,
+a.redLink:visited
+    color: brand2
+    text-decoration: underline !important
+
+body header a:link,
+body header a:visited
+    color: brand2
+
+
+
+
+    // typo defaults
+a:link, a:visited
+    color: brand1
+    text-decoration: none
+    transition: 0.5s
+a:hover
+    color: brand1
+    //text-decoration: underline
+    transition: 0.5s
+/*article.content a:link:not(.ctaButton26), a:visited:not(.ctaButton26)
+        color: brand3
+        text-decoration: underline
+article.content a:hover:not(.ctaButton26)
+        color: brand2*/
+/* p a:link,
+p a:visited,
+li a:link,
+li a:visited
+    text-decoration: underline
+
+#navHeader a:link, #navHeader a:visited
+    color: brand5
+*/
+
+
+// custom typo
+ul
+    margin-bottom: 2em
+    padding-left: 0
+    padding-right: 0
+
+ul li
+    font-size: 1em
+    line-height: 1.4em
+    margin-bottom: 0em
+    list-style-type: none
+    padding-bottom: 1.1em
+    padding-top: 1em
+    padding-right: 1em
+    border-bottom: 1px solid brand2
+ul li:last-child
+    border-bottom: none
+/*ul li:first-child
+    padding-top: 0*/
+ul.light li
+    border-bottom: 1px solid whiteAlp50
+ul p
+    margin-bottom: 0
+    margin-top: 0
+
+.reverse ul
+    border-top: 1px solid brand1
+    border-bottom: 1px solid brand1
+    @media phoneRule
+        width: 100%
+
+.reverse li
+    color: brand4
+    border-bottom: 1px solid brand1
+    
+    
+.reverse li strong 
+    color: white
+.reverse .galleryElement ul,
+.reverse .galleryElement li
+    border:none
+
+
+ ul.simpleGrid
+    border:none
+.simpleGrid li
+    font-size: 1.2em
+    line-height: 1.3em
+
+
+// picturefill-bg and image teaser
+*.picturefill-background a
+    color: brand1 
+@media ttrigger
+    *.picturefill-background.lighten1,
+    *.picturefill-background.lighten1 a,
+    *.picturefill-background.lighten2,
+    *.picturefill-background.lighten2 a
+    *.picturefill-background.darktext,
+    *.picturefill-background.darktext a
+        color: blackAlp50
+    *.picturefill-background.lighttext,
+    *.picturefill-background.lighttext a
+        color: white      
+*.picturefill-background a
+    //text-decoration: underline
+
+nav a:hover
+    color: brand1
+p a:link,
+p a:visited
+    color: brand2
+    text-decoration: underline    
+p a:hover
+    color: brand2
+
+.activeLink
+    color: white !important
+    transition: 300ms
+/*.activeLink,
+nav a:hover
+    border-bottom-color: white !important;
+*/
+
+
+header > nav 
+    //padding-bottom: navHeight*0.125
+    display: flex
+    //column-gap: marM*0.9
+    align-items: center
+    justify-content: flex-end
+    @media dtrigger
+        //padding: padXXS*1.5 padXXS padXXS padXXS
+header > nav a:not(.ctaButton):link
+    margin-left: marXS*1.5
+    margin-right: marXS*1.5
+
+header > nav a.ctaButton:link,
+header > nav a.ctaButton:visited
+    margin-left: marXS
+    margin-right: marXS
+    color: brand1
+    background-color: white
+    font-size: 1em
+    font-weight: 700
+    padding: 10px 15px !important 
+header > nav a.ctaButton:link i
+    font-size: 1.4em
+    line-height: 0.6em
+    position: relative
+    bottom: -3px
+    font-weight: 1000
+header > nav a.ctaButton:hover
+    color: brand1
+    background-color: brand2
+    
+
+nav a:link
+    font-weight: 500
+    display: inline-block
+    font-size 0.9em
+    line-height: 1.1em
+    @media phoneRule
+        font-size:1em
+
+nav a:link.activeLink, nav a:visited.activeLink
+    padding-bottom: padXXS*0.35
+    color: brand3
+    border-bottom: 2px solid white
+nav a:link
+    white-space: nowrap
+
+nav a:link:hover,
+nav a:visited:hover
+    color: white
+
+nav a.subnav 
+    margin-left: 2em
+
+nav.vertical
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+nav.vertical a
+    margin-bottom: 4px
+
+nav.leftSpaced
+    display:flex
+    column-gap: 1.5vw
+    @media phoneRule
+        flex-direction: column
+
+
+
+nav a:not(.activeLink):link:after, 
+nav a:not(.activeLink):visited::after 
+    content: ""
+    display: block
+    width: 0
+    border-bottom: 2px solid white
+    transition: width 0.3s
+    padding: 0 0 padXXS*0.35 0
+nav a.effect:not(.activeLink):hover::after
+    width: 100%
+
+
+
+
+
+h1, h2, h3, h4 ,h5, h6
+    margin: 0
+
+// defaults   
+h1, .h1
+    font-weight: 750
+    font-size: 4em
+    line-height: 1em
+    letter-spacing: -0.03em
+    text-wrap: balance
+    @media phoneRule
+        font-size: 11vw
+    
+h2, .h2
+    font-weight: 650
+    font-size: 2.8em
+    line-height: 1em
+    letter-spacing: -0.03em
+    text-wrap: balance
+    @media phoneRule
+        font-size: 8vw
+
+h3, .h3
+    font-weight: 650
+    font-size: 1.8em
+    line-height: 1em
+    letter-spacing: 0
+h4, .h4
+    font-weight: 700
+    font-size: 1.5em
+    line-height: 1em
+    letter-spacing: -0.01em
+
+h5, .h5
+    font-weight: 700
+    font-size: 1.3em
+    line-height: 1em
+h6, .h6
+    font-weight: 700
+    font-size: 1.2em
+    line-height: 1.1em
+    letter-spacing: -0.01em
+p
+    font-weight: 400
+    font-size: 1em
+    line-height: 1.4em
+    letter-spacing: -0.01em
+    margin: 0
+    color: black
+p.spaced
+    line-height: 1.8em
+
+
+@media phoneRule
+    h1
+        font-size: 3em
+        
+    h2
+        font-size: 2.5em
+
+    h3
+        font-size: 2.25em
+
+    h4
+        font-size: 1.5em
+
+    h5
+        font-weight: 400
+        font-size: 1.25em
+        line-height: 1.15em
+    h6
+        font-weight: 400
+        font-size: 1em
+        line-height: 1.15em
+        letter-spacing: -0.01em
+    p
+        font-weight: 400
+        font-size: 1em
+        line-height: 1.4em
+        //letter-spacing: -0.01em
+        margin-bottom: 0.3em
+
+@media lgdesktopRule
+    p, h5, h6
+        font-size: 1.5em
+
+@media smallHeightDesktop
+    body
+        font-size: 14px
+    h1
+        font-size: 3em    
+    h4
+        font-size: 1.3em
+    h5
+        font-size: 1.1em
+
+
+p, li, a, td
+    //line-height: 125%
+
+
+main .content li
+    font-size: 1.1em
+    line-height: 1.4em
+
+
+
+a.siteLogo:hover
+    cursor: pointer
+
+
+strong 
+    font-weight: 600
+
+// modify typo
+.small
+    font-size: 0.95em  
+.smaller
+    font-size: 90% 
+.smallest
+    font-size: 12px 
+    letter-spacing: -0.5px
+.light
+    font-weight: 400
+.balanceMe 
+    text-wrap: balance
+.balanced,
+div.fullW p
+    text-wrap: balance !important
+
+
+
+
+
+// footer
+body > footer
+    font-size: 0.9em
+    line-height: 1em
+    text-align: center 
+    font-weight: 400  
+body > footer nav 
+    display: flex
+    flex-direction: column
+body > footer a
+body > footer i:before
+    color: white !important; 
+body > footer .links a
+    color: white !important; 
+    display: inline-block
+    padding: 5px 3px 3px 3px 
+    margin: marXXS*0.45 0
+    border-bottom: 1px solid brand1
+
+body > footer a:hover,
+body > footer i:hover:before
+    transition: 0.5s
+    color: brand1mid !important;
+    
+body > footer .links a:hover 
+    color: brand1mid !important;
+    text-decoration: none
+    transition: 0.5s
+    border-bottom: 1px solid brand1mid
+
+body > footer a.activeLink
+    color: brand0 !important; 
+    @media dtrigger
+        border-left: 3px solid brand0
+        margin-left: padXXS*1.15
+
+
+
+
+
+
+
+.reverse
+    color: white
+.reverse a:not(.ctaButton)
+    color: white
+    text-decoration: underline
+
+.balanced 
+    text-wrap: balance
+
+.noUppercase
+    text-transform: none
+
+
+
+
+//text effects 
+.responsiveLarge
+    font-size: 4vw
+    line-height: 95%
+    letter-spacing: -0.03em
+    //font-weight: 700
+    @media phoneRule
+        font-size:7vh
+        line-height: 110%
+    @media lgdesktopRule
+        font-size:5vh
+    @media smallHeightDesktop
+        font-size:4vw
+
+.responsiveLarge .outline
+    letter-spacing: -0.2vw
+.outline
+    -webkit-text-stroke: 1.25px
+    -webkit-text-fill-color: rgba(0,0,0,0)
+.strokeBrand0
+    -webkit-text-stroke-color: brand0
+.strokeBrand1
+    -webkit-text-stroke-color: brand1
+.strokeBrand2
+    -webkit-text-stroke-color: brand2
+.strokeBrand3
+    -webkit-text-stroke-color: brand3
+.strokeBrand4
+    -webkit-text-stroke-color: brand4
+.strokeBrand5
+    -webkit-text-stroke-color: brand5
+.strokeBrand6
+    -webkit-text-stroke-color: brand6
+.light
+    font-weight: 300
+
+
+
+
+.underLine {text-decoration: underline !important; }
+.upperCase {text-transform: uppercase;}
+.outlineCase-black {-webkit-text-stroke: 2px black;}
+.outlineCase-white {-webkit-text-stroke: 2px white;}
+.outlineCase-cyan1 {-webkit-text-stroke: 2px brand1}
+.outlineCase-cyan2 {-webkit-text-stroke: 2px brand2}
+.noTextFill {color: rgba(0,0,0,0.0);}
+
+
+
+
+
+
+
+@media mtrigger
+    .vh10 {font-size: 9.25vh !important;}
+    .vh9 {font-size: 8.25vh !important;}
+    .vh8 {font-size: 7.75vh !important;}
+    .vh7 {font-size: 6.75vh !important;}
+    .vh6 {font-size: 6vh !important;}
+    .vh5 {font-size: 5vh !important;}
+    .vh4 {font-size: 3.75vh !important;}
+    .vh3 {font-size: 3.5vh !important;}
+    .vh2 {font-size: 3vh !important;}
+    .vh15 {font-size: 2.75vh !important;}
+    .vh11 {font-size: 2.5vh !important;}
+    .vh1 {font-size: 2vh !important;}
+    .vh0 {font-size: 1.75vh !important;}
+
+@media dtrigger
+    .vh10 {font-size: 10vw; letter-spacing: -0.05em; line-height: 0.9em !important; margin-bottom: 0.1em !important; left: -0.5vw}
+    .vh9 {font-size: 9vw; letter-spacing: -0.05em; line-height: 0.9em !important;margin-bottom: 0.1em !important; left: -0.4vw;}
+    .vh8 {font-size: 8vw; letter-spacing: -0.05em; line-height: 0.9em !important; margin-bottom: 0.15em !important; left: -0.4vw;}
+    .vh7 {font-size: 6.5vw; letter-spacing: -0.05em; line-height: 0.9em !important; margin-bottom: 0.2em !important; left: -0.3vw;}
+    .vh6 {font-size: 5vw; letter-spacing: -0.035em; line-height: 0.95em !important; margin-bottom: 0.275em !important; left: -0.25vw;}
+    .vh5 {font-size: 4vw; letter-spacing: -0.04em; line-height: 1em !important; margin-bottom: 0.3em !important; left: -0.2vw;}
+    .vh4 {font-size: 3vw; letter-spacing: -0.03em; line-height: 1em; margin-bottom: 0.4em !important; left: -0.15vw;}
+    .vh3 {font-size: 2.5vw; letter-spacing: -0.02em; line-height: 1.05em; margin-bottom: 0.4em !important;}
+    .vh2 {font-size: 2vw; letter-spacing: -0.015em; line-height: 1.15em !important; margin-bottom: 0.5em !important;}
+    .vh15 {font-size: 1.5vw; letter-spacing: 0em; line-height: 1.15em !important; margin-bottom: 0.5em !important;}
+    .vh11 {font-size: 1.1vw; letter-spacing: 0em; line-height: 1.15em !important; margin-bottom: 0.5em !important;}
+    .vh1 {font-size: 1.1vw; letter-spacing: 0em; line-height: 1.2em !important; margin-bottom: 0.5em !important;}
+    .vh0 {font-size: 1vw; letter-spacing: 0em; line-height: 1.2em !important; margin-bottom: 0.5em !important;}
+
+
+.fw100 {font-weight: 100 !important;}
+.fw200 {font-weight: 200 !important;}
+.fw300 {font-weight: 300 !important;}
+.fw400 {font-weight: 400 !important;}
+.fw500 {font-weight: 500 !important;}
+.fw600 {font-weight: 600 !important;}
+.fw700 {font-weight: 700 !important;}
+.fw800 {font-weight: 800 !important;}
+.fw900 {font-weight: 900 !important;}
+.fw1000 {font-weight: 1000 !important;}
+
+
+
+
+/* mobile shop nav */
+
+a.triggerCats 
+    padding: padL padXS padXS 0
+    margin: 1em marXL
+    display: block
+    font-weight: 700
+    border-top: 1px solid brand2
+    
+a.triggerCats i
+    font-size: 1.5em
+    line-height: 0.25em
+    position: relative
+    bottom: -5px
+    float: right
+    transition: 0.3s
+a.triggerCats.active i
+    rotate: 90deg    
+
+@media phoneRule
+    article.shopCat,
+    article.shopCat section
+        padding-top: 0
+    article.shopCat
+        display: none
