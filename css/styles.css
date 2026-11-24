@@ -3855,6 +3855,9 @@ p {
   margin: 0;
   color: #000;
 }
+footer p {
+  color: #fff;
+}
 p.spaced {
   line-height: 1.8em;
 }
