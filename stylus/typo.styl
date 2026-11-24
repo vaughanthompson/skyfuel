@@ -348,15 +348,25 @@ nav.vertical
     display: flex
     flex-direction: column
     align-items: flex-start
+    @media phoneRule
+        flex-direction: row
+        flex-wrap: wrap
+        column-gap: 5vw
+        
 nav.vertical a
     margin-bottom: 4px
-
+    @media phoneRule
+        text-wrap: wrap
 nav.leftSpaced
     display:flex
     column-gap: 1.5vw
     @media phoneRule
         flex-direction: column
-
+nav.splitColumn 
+    @media ttrigger
+        flex-wrap: wrap
+        column-gap: 2vw
+        height: 15vw
 
 
 nav a:not(.activeLink):link:after, 
