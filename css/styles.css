@@ -3367,6 +3367,26 @@ tr.spanRowLeft td {
         flex-basis: 25%;
   }
 }
+@media screen and (min-width: 1100px) {
+  .threeCol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid #f00;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .threeCol > div {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    border: 1px solid #f00;
+  }
+}
 /* 
 * typography 
 */
