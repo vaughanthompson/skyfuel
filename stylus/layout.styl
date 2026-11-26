@@ -78,11 +78,16 @@ body header.d > *:last-child
 
 
 body > main > header,
-body > main > article,
 footer article
     padding: padXL padL
     @media dtrigger
         padding: padL padL*1.5
+    @media lgdesktopRule
+        padding: padL padL*0.75 
+body > main > article
+    padding: padXL padL
+    @media dtrigger
+        padding: padL padL*2
     @media lgdesktopRule
         padding: padL padL*0.75 
 /*    
@@ -1567,7 +1572,7 @@ article.content > div
         flex-direction: row
         justify-content: center
         align-items: center
-        column-gap: 2em
+        column-gap: 3em
 div.profileDetails article.content > div
     @media ttrigger
         display: block
@@ -1597,8 +1602,8 @@ article.content section > div
     @media ttrigger
         padding-top: padXS   
         padding-bottom: padXS   
-        width:90%
-        margin: 0px auto
+        //width:90%
+        //margin: 0px auto
         {test}
 div.profileDetails article.content section:first-of-type > div
     @media mtrigger
@@ -1609,7 +1614,6 @@ div.profileDetails article.content section:last-of-type > div
 
 article.content div.fullW
     width:100%
-    {test}
 article.content section > div.gridRows
     @media dtrigger
         padding-top: 0   
@@ -1647,30 +1651,30 @@ article.content section > div.gridRows a
     color: brand1
 
 
-article.threeCol > div
-    flex-wrap: wrap
 
-article.threeCol section
-    @media tabletRule
-        flex-basis: 40%
-    @media dtrigger
-        flex-basis: 30%
+
 
 
 
 article.doubleCol > div
+article.threeCol > div
     flex-wrap: wrap
-    justify-content: space-around
+    justify-content: center
     row-gap: padM
 article.doubleCol section
     @media tabletRule
         flex-basis: 50%
     @media dtrigger
-        flex-basis: 45%
+        flex-basis: 43%
 article.doubleCol section > div 
     //padding: 0
     //margin: 0
     //width: auto
+article.threeCol section
+    @media tabletRule
+        flex-basis: 40%
+    @media dtrigger
+        flex-basis: 30%
 
 
 article.content.padXXL
