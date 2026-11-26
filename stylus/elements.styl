@@ -167,6 +167,10 @@ a.cta:hover::after
         padding: 16px 20px 16px 20px !important 
         display: block
         text-align: center
+@media phoneRule
+    .banner .ctaButton, a.ctaButton
+        transform: scale(85%)
+        transform-origin: left      
 .ctaButton.ctaShop, 
 a.ctaButton.ctaShop,
 #cNav.alt a.ctaButton
@@ -311,3 +315,40 @@ a.ctaButton:hover,
     @media phoneRule
         background: none
         color: brand2
+
+
+
+.oval
+    display: flex
+    width: 300px
+    height: 300px
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    padding: padXS
+    overflow: hidden
+    @media phoneRule
+        margin: 0px auto
+    @media smallHeightDesktop
+        width: 120px
+        height: 120px
+
+.oval.small50
+    width: 50px
+    height: 50px
+    padding: 20px
+    @media smallHeightDesktop
+        width: 30px
+        height: 30px
+
+.oval.small150
+    width: 140px
+    height: 140px
+    padding: 50px
+    @media phoneRule
+        width: 50px
+        height: 50px
+        padding: 20px
+    @media smallHeightDesktop
+        width: 120px
+        height: 120px

@@ -106,6 +106,33 @@
 .brand7border {
   border-color: #8388ba !important;
 }
+.whiteBg {
+  background-color: #fff !important;
+}
+.blackBg90 {
+  background-color: rgba(0,0,0,0.9);
+}
+.blackBg85 {
+  background-color: rgba(0,0,0,0.85);
+}
+.blackBg80 {
+  background-color: rgba(0,0,0,0.8);
+}
+.blackBg75 {
+  background-color: rgba(0,0,0,0.75);
+}
+.blackBg70 {
+  background-color: rgba(0,0,0,0.7);
+}
+.blackBg60 {
+  background-color: rgba(0,0,0,0.6);
+}
+.blackBg50 {
+  background-color: rgba(0,0,0,0.5);
+}
+.white {
+  color: #fff;
+}
 .good {
   color: #39b54a;
 }
@@ -247,6 +274,75 @@ span.spacer25 {
 .relative {
   position: relative;
 }
+.goLeft {
+  text-align: left;
+}
+@media screen and (max-width: 750px) {
+  .goLeft {
+    text-align: center;
+  }
+}
+.alignEnd {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  -ms-flex-item-align: end;
+  margin-left: auto;
+}
+.imageInline {
+  display: inline-block;
+}
+.imageHeight30px {
+  height: 30px;
+  width: auto;
+}
+.imageHeight40px {
+  height: 40px;
+  width: auto;
+}
+.imageHeight50px {
+  height: 50px;
+  width: auto;
+}
+.width50 {
+  width: 50%;
+}
+@media screen and (max-width: 750px) {
+  .width50 {
+    width: auto;
+  }
+}
+.width60 {
+  width: 60%;
+}
+@media screen and (max-width: 750px) {
+  .width60 {
+    width: auto;
+  }
+}
+.width70 {
+  width: 70%;
+}
+@media screen and (max-width: 750px) {
+  .width70 {
+    width: auto;
+  }
+}
+.width80 {
+  width: 80%;
+}
+@media screen and (max-width: 750px) {
+  .width80 {
+    width: auto;
+  }
+}
+.width90 {
+  width: 90%;
+}
+@media screen and (max-width: 750px) {
+  .width90 {
+    width: auto;
+  }
+}
 .padBtmXS {
   padding-bottom: 0.9vw !important;
 }
@@ -268,6 +364,20 @@ span.spacer25 {
 div.picturefill-background {
   background-position: 50% 50%;
   background-size: cover;
+}
+div.picturefill-background.contain {
+  background-size: contain;
+}
+div.picturefill-background.width80 {
+  background-size: 80% auto;
+}
+div.picturefill-background.right {
+  background-position: right;
+}
+@media screen and (max-width: 750px) {
+  div.picturefill-background.mobOverride {
+    background-position: center 120%;
+  }
 }
 /* 
 * forms 
@@ -1243,6 +1353,9 @@ div#mNav {
 div.mblnav,
 div.deskNav {
   z-index: 2000;
+}
+.slick-dots li {
+  z-index: 1000;
 }
 div.content {
   display: -webkit-box;
@@ -2270,15 +2383,6 @@ main > * > div.picturefill-background div.content {
 }
 main > * > div.imageBlocks section > a.cta {
   margin-top: auto;
-}
-div.picturefill-background.contain {
-  background-size: contain;
-}
-div.picturefill-background.width80 {
-  background-size: 80% auto;
-}
-div.picturefill-background.right {
-  background-position: right;
 }
 .simpleFlex {
   display: -webkit-box;
@@ -3687,11 +3791,11 @@ nav a:hover {
 }
 p a:link,
 p a:visited {
-  color: #00d4fe;
+  color: #001e8c;
   text-decoration: underline;
 }
 p a:hover {
-  color: #00d4fe;
+  color: #001e8c;
 }
 .activeLink {
   color: #fff !important;
@@ -4554,6 +4658,15 @@ a.ctaButton {
     text-align: center;
   }
 }
+@media screen and (max-width: 750px) {
+  .banner .ctaButton,
+  a.ctaButton {
+    -webkit-transform: scale(85%);
+    transform: scale(85%);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
 .ctaButton.ctaShop,
 a.ctaButton.ctaShop,
 #cNav.alt a.ctaButton {
@@ -4745,6 +4858,65 @@ a.ctaButton:hover,
   .outofstock .avail {
     background: none;
     color: #00d4fe;
+  }
+}
+.oval {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  -webkit-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.9vw;
+  overflow: hidden;
+}
+@media screen and (max-width: 750px) {
+  .oval {
+    margin: 0px auto;
+  }
+}
+@media smallHeightDesktop {
+  .oval {
+    width: 120px;
+    height: 120px;
+  }
+}
+.oval.small50 {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+@media smallHeightDesktop {
+  .oval.small50 {
+    width: 30px;
+    height: 30px;
+  }
+}
+.oval.small150 {
+  width: 140px;
+  height: 140px;
+  padding: 50px;
+}
+@media screen and (max-width: 750px) {
+  .oval.small150 {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+  }
+}
+@media smallHeightDesktop {
+  .oval.small150 {
+    width: 120px;
+    height: 120px;
   }
 }
 .relative {
@@ -5050,6 +5222,9 @@ a.ctaButton:hover,
   .tileBanner .bannerInnerContent {
     height: auto;
   }
+  .mobOverride .bannerInnerContent {
+    height: 70vh;
+  }
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
   .bannerInnerContent {
@@ -5315,6 +5490,14 @@ div.posOverlay {
     height: 14vh;
   }
 }
+@media screen and (min-width: 1100px) {
+  div.vectorLineart {
+    background-image: url("/images/masthead/aircraft-lineart-50.svg");
+    background-size: 105% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
 div.imageOverlay {
   position: absolute;
   right: 5vw;
@@ -5438,6 +5621,42 @@ div.imageOverlay {
 .gradientBlackGreyFromLeft {
   background: -webkit-gradient(linear, left top, right top, color-stop(15%, #000), to(rgba(26,26,26,0.3)));
   background: linear-gradient(to right, #000 15%, rgba(26,26,26,0.3));
+}
+.restrictWidth {
+  max-width: 1400px;
+  margin: 0px auto;
+  border: 1px solid #f00;
+}
+@media screen and (max-width: 750px) {
+  .restrictWidth {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .restrictWidth {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+  .restrictWidth {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .restrictWidth {
+    max-width: 1800px;
+  }
+}
+.restrictWidthTighter {
+  max-width: 1000px;
+}
+@media screen and (min-width: 2100px) {
+  .restrictWidthTighter {
+    max-width: 1400px;
+  }
 }
 @media screen and (min-width: 750px) {
   .m {

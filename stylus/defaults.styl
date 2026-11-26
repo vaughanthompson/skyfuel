@@ -69,6 +69,34 @@ brand2Alp50 = rgba(0,121,162,0.5)
     border-color: brand7 !important
 
 
+
+.whiteBg
+    background-color: white !important
+
+.blackBg90 {
+    background-color: rgba(0,0,0,0.9);
+}
+.blackBg85 {
+    background-color: rgba(0,0,0,0.85);
+}
+.blackBg80 {
+    background-color: rgba(0,0,0,0.8);
+}
+.blackBg75 {
+    background-color: rgba(0,0,0,0.75);
+}
+.blackBg70 {
+    background-color: rgba(0,0,0,0.7);
+}
+.blackBg60 {
+    background-color: rgba(0,0,0,0.6);
+}
+.blackBg50 {
+    background-color: rgba(0,0,0,0.5);
+}
+.white
+    color: white
+
 .good
     color: #39b54a
 .ok
@@ -317,6 +345,53 @@ span.spacer25
     position: relative
 
 
+.goLeft
+    text-align: left
+    @media phoneRule
+        text-align: center
+
+.alignEnd
+    align-self: flex-end
+    margin-left: auto
+
+
+.imageInline
+    display: inline-block
+
+.imageHeight30px
+    height: 30px
+    width auto
+    
+.imageHeight40px
+    height: 40px
+    width auto
+
+.imageHeight50px
+    height: 50px
+    width auto
+
+.width50
+    width: 50%
+    @media phoneRule
+        width:auto
+.width60
+    width: 60%
+    @media phoneRule
+        width:auto
+.width70
+    width: 70%
+    @media phoneRule
+        width:auto
+.width80
+    width: 80%
+    @media phoneRule
+        width:auto
+.width90
+    width: 90%
+    @media phoneRule
+        width:auto
+
+
 // padding control
 .padBtmXS
     padding-bottom: padXS !important
@@ -336,4 +411,16 @@ div.picturefill-background
     background-position: 50% 50%;
     background-size: cover;
 
+div.picturefill-background.contain
+    background-size: contain
+
+div.picturefill-background.width80
+    background-size: 80% auto
+
+div.picturefill-background.right
+    background-position: right
+
+@media phoneRule
+    div.picturefill-background.mobOverride
+        background-position: center 120%
 
