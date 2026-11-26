@@ -1269,6 +1269,7 @@ article.basicContent hr
 @media dtrigger
     article.basicContent div.content
         flex-wrap: wrap
+        {test}
     article.basicContent header
         flex: 1 0 100%
         padding-bottom: 0
@@ -1526,18 +1527,188 @@ article.content .hasSidebar.flip
     @media dtrigger
         flex-basis: 25%
 
-.threeCol
+footer .threeCol
     @media dtrigger
         display: flex
         justify-content: space-between
         //column-gap: 5vw
-.threeCol > div
+footer .threeCol > div
     @media dtrigger
         flex-basis: 30%
         padding-left: 1.5em
         padding-top: 0.5em
         border-left: 1px solid brand2
-.threeCol > div:first-of-type
+footer .threeCol > div:first-of-type
     @media dtrigger
         padding-left: none
         border: none
+
+
+
+
+
+
+
+
+
+
+
+main > article
+    {test}
+
+article.content > div
+    display: flex
+    flex-wrap: nowrap
+    flex-direction: column
+    row-gap: 2em
+    @media ttrigger
+        display: flex
+        flex-wrap: nowrap
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        column-gap: 2em
+div.profileDetails article.content > div
+    @media ttrigger
+        display: block
+    @media dtrigger
+        display: flex
+article.content.flip > div
+    @media ttrigger
+        flex-direction: row-reverse
+article.content.alignTop > div
+    align-items: flex-start
+
+article.content section
+    width: 100%
+    text-align: center
+    @media ttrigger
+        flex: 0 1 60%
+        text-align: center
+        //text-wrap: balance
+
+
+article.content section.fullW
+    @media ttrigger
+        flex: 0 1 100%
+article.content section > div
+    @media phoneRule
+        padding: padM*2 0   
+    @media ttrigger
+        padding-top: padXS   
+        padding-bottom: padXS   
+        width:80%
+        margin: 0px auto
+div.profileDetails article.content section:first-of-type > div
+    @media mtrigger
+        padding-bottom: 0
+div.profileDetails article.content section:last-of-type > div
+    @media mtrigger
+        padding-top: 0
+
+article.content div.fullW
+    width:90%
+article.content section > div.gridRows
+    @media dtrigger
+        padding-top: 0   
+        padding-bottom: 0   
+        width:auto
+        display: flex
+        flex-wrap: nowrap
+        flex-direction: row
+        justify-content: center
+        column-gap: 1em
+article.content section > div.gridRows.multiRow
+        flex-wrap: wrap
+        row-gap: marStd
+article.content section > div.gridRows div.gridItem
+    @media mtrigger
+        margin-bottom: marL
+    @media dtrigger
+        flex: 0 1 18%
+article.content section.videoHolder > div
+    padding-left: 0
+    padding-right: 0
+    width: 100%
+    height: 120px
+    @media ttrigger
+        height: 250px
+
+
+article.content section > div.gridRows picture
+    margin-bottom: marM
+    @media mtrigger
+        height: 40vh
+    @media dtrigger
+        margin-bottom: marXS
+article.content section > div.gridRows a
+    color: brand1
+
+
+article.threeCol > div
+    flex-wrap: wrap
+
+article.threeCol section
+    @media tabletRule
+        flex-basis: 40%
+    @media dtrigger
+        flex-basis: 30%
+
+
+
+article.doubleCol > div
+    flex-wrap: wrap
+    justify-content: space-around
+    row-gap: padM
+article.doubleCol section
+    @media tabletRule
+        flex-basis: 50%
+    @media dtrigger
+        flex-basis: 40%
+article.doubleCol section > div 
+    padding: 0
+    margin: 0
+    width: auto
+
+
+article.content.padXXL
+    padding: padXXL 0 
+    @media lgdesktopRule
+        padding: padL 0
+article.content.padXL
+    padding: padXL 0 
+    @media lgdesktopRule
+        padding: padL 0 
+article.content.padL
+    padding: padL 0 
+    @media lgdesktopRule
+        padding: padM 0  
+article.content.padM
+    padding: padM 0    
+    @media phoneRule
+        padding: padM*2 0 
+article.content.padStd
+    padding: padStd 0    
+    @media phoneRule
+        padding: padM*2 0  
+
+article.content.padXS
+    padding: 2em 0    
+    @media phoneRule
+        //padding: padM*2 0   
+
+
+
+article.content section > div.gridRows.noGap
+    @media dtrigger
+        margin-left: 2em
+        margin-right: 2em
+article.content section > div.gridRows.noGap div.gridItem
+    @media dtrigger
+        flex: 1 1 auto
+
+.noGap 
+    column-gap: 0 !important
+
+/*article.content:not(:first-of-type)
+    padding-top: 0*/
