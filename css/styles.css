@@ -3607,8 +3607,9 @@ article.content section {
   article.content section > div {
     padding-top: 0.9vw;
     padding-bottom: 0.9vw;
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
+    border: 1px solid #f00;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -3622,7 +3623,8 @@ article.content section {
   }
 }
 article.content div.fullW {
-  width: 90%;
+  width: 100%;
+  border: 1px solid #f00;
 }
 @media screen and (min-width: 1100px) {
   article.content section > div.gridRows {
@@ -3739,14 +3741,9 @@ article.doubleCol > div {
 }
 @media screen and (min-width: 1100px) {
   article.doubleCol section {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
-}
-article.doubleCol section > div {
-  padding: 0;
-  margin: 0;
-  width: auto;
 }
 article.content.padXXL {
   padding: padXXL 0;
@@ -4302,8 +4299,8 @@ h3,
 .h3 {
   font-weight: 650;
   font-size: 1.8em;
-  line-height: 1em;
-  letter-spacing: 0;
+  line-height: 1.1em;
+  letter-spacing: -0.02em;
 }
 h4,
 .h4 {
