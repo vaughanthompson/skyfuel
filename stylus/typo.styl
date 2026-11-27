@@ -687,20 +687,29 @@ body > footer a.activeLink
 
 /* mobile shop nav */
 
-a.triggerCats 
+a.triggerCats,
+.inpageNav a
     padding: padL padXS padXS 0
     margin: 1em marXL
     display: block
     font-weight: 700
     border-top: 1px solid brand2
-    
-a.triggerCats i
+.inpageNav a
+    padding: padL 0 padXS 0 
+    margin: 1em 0
+    text-align: left   
+.inpageNav a:last-of-type
+    padding-bottom: padL
+    border-bottom: 1px solid brand2
+a.triggerCats i,
+.inpageNav a i
     font-size: 1.5em
     line-height: 0.25em
     position: relative
     bottom: -5px
     float: right
     transition: 0.3s
+
 a.triggerCats.active i
     rotate: 90deg    
 

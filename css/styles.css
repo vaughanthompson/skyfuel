@@ -4755,14 +4755,25 @@ body > footer a.activeLink {
 .fw1000 {
   font-weight: 1000 !important;
 }
-a.triggerCats {
+a.triggerCats,
+.inpageNav a {
   padding: 5vw 0.9vw 0.9vw 0;
   margin: 1em 10vw;
   display: block;
   font-weight: 700;
   border-top: 1px solid #00d4fe;
 }
-a.triggerCats i {
+.inpageNav a {
+  padding: 5vw 0 0.9vw 0;
+  margin: 1em 0;
+  text-align: left;
+}
+.inpageNav a:last-of-type {
+  padding-bottom: 5vw;
+  border-bottom: 1px solid #00d4fe;
+}
+a.triggerCats i,
+.inpageNav a i {
   font-size: 1.5em;
   line-height: 0.25em;
   position: relative;
