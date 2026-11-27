@@ -165,10 +165,10 @@ a.cta:hover::after
     padding: 16px 20px 16px 20px !important 
     @media phoneRule
         padding: 16px 20px 16px 20px !important 
-        display: block
+        //display: block
         text-align: center
 @media phoneRule
-    .banner .ctaButton, a.ctaButton
+    .banner .ctaButton, .banner a.ctaButton
         transform: scale(85%)
         transform-origin: left      
 .ctaButton.ctaShop, 
@@ -329,7 +329,10 @@ a.ctaButton:hover,
     overflow: hidden
     border: 20px solid whiteAlp50
     @media phoneRule
-        margin: 0px auto
+        //margin: 0px auto
+        width: 120px
+        height: 120px
+        padding: 0
     @media smallHeightDesktop
         width: 120px
         height: 120px
@@ -356,3 +359,10 @@ a.ctaButton:hover,
 
 .oval h1
     margin: 0 !important
+
+
+
+.flexMobile
+    @media phoneRule
+        display: flex
+        column-gap: 1em

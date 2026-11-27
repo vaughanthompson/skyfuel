@@ -1258,11 +1258,6 @@ body > main > article {
     padding: 5vw 3.75vw;
   }
 }
-@media screen and (max-width: 750px) {
-  body > main > article {
-    margin-bottom: 10vw;
-  }
-}
 @media screen and (min-width: 1100px) {
   body > main > article:last-of-type {
     padding-bottom: 5vw;
@@ -3088,7 +3083,6 @@ article.basicContent hr {
     -o-box-lines: multiple;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border: 1px solid #f00;
   }
   article.basicContent header {
     -webkit-box-flex: 1;
@@ -3271,7 +3265,6 @@ table.listItems tbody td {
 }
 @media screen and (max-width: 750px) {
   table.listItems.cart td br {
-    border: 1px solid #f00;
     display: none;
   }
 }
@@ -3406,9 +3399,6 @@ tr.spanRowLeft td {
     margin: 0px auto;
   }
 }
-.hasSidebar {
-  border: 1px solid #f00;
-}
 @media screen and (min-width: 1100px) {
   .hasSidebar {
     display: -webkit-box;
@@ -3420,9 +3410,6 @@ tr.spanRowLeft td {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-}
-.hasSidebar > div {
-  border: 1px solid #f00;
 }
 @media screen and (min-width: 1100px) {
   .hasSidebar > div {
@@ -3512,9 +3499,6 @@ tr.spanRowLeft td {
     padding-left: none;
     border: none;
   }
-}
-main > article {
-  border: 1px solid #f00;
 }
 article.content > div {
   display: -webkit-box;
@@ -3621,7 +3605,6 @@ article.content section {
   article.content section > div {
     padding-top: 0.9vw;
     padding-bottom: 0.9vw;
-    border: 1px solid #f00;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -3728,8 +3711,8 @@ article.threeCol > div {
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
   article.doubleCol section {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -3740,8 +3723,8 @@ article.threeCol > div {
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
   article.threeCol section {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -4311,7 +4294,7 @@ h4,
 .h4 {
   font-weight: 700;
   font-size: 1.5em;
-  line-height: 1em;
+  line-height: 1.1em;
   letter-spacing: -0.01em;
 }
 h5,
@@ -4349,18 +4332,16 @@ p.spaced {
     font-size: 2.5em;
   }
   h3 {
-    font-size: 2.25em;
+    font-size: 2.5em;
   }
   h4 {
     font-size: 1.5em;
   }
   h5 {
-    font-weight: 400;
     font-size: 1.25em;
     line-height: 1.15em;
   }
   h6 {
-    font-weight: 400;
     font-size: 1em;
     line-height: 1.15em;
     letter-spacing: -0.01em;
@@ -4969,13 +4950,12 @@ a.ctaButton {
   .ctaButton,
   a.ctaButton {
     padding: 16px 20px 16px 20px !important;
-    display: block;
     text-align: center;
   }
 }
 @media screen and (max-width: 750px) {
   .banner .ctaButton,
-  a.ctaButton {
+  .banner a.ctaButton {
     -webkit-transform: scale(85%);
     transform: scale(85%);
     -webkit-transform-origin: left;
@@ -5197,7 +5177,9 @@ a.ctaButton:hover,
 }
 @media screen and (max-width: 750px) {
   .oval {
-    margin: 0px auto;
+    width: 120px;
+    height: 120px;
+    padding: 0;
   }
 }
 @media smallHeightDesktop {
@@ -5237,6 +5219,17 @@ a.ctaButton:hover,
 }
 .oval h1 {
   margin: 0 !important;
+}
+@media screen and (max-width: 750px) {
+  .flexMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+  }
 }
 .relative {
   position: relative;
@@ -5944,7 +5937,6 @@ div.imageOverlay {
 .restrictWidth {
   max-width: 1400px;
   margin: 0px auto;
-  border: 1px solid #f00;
 }
 @media screen and (max-width: 750px) {
   .restrictWidth {
@@ -5954,19 +5946,19 @@ div.imageOverlay {
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
   .restrictWidth {
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
 @media screen and (min-width: 1100px) and (max-width: 1500px) {
   .restrictWidth {
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
   }
 }
 @media screen and (min-width: 2100px) {
   .restrictWidth {
-    max-width: 1800px;
+    max-width: 1600px;
   }
 }
 .restrictWidthTighter {
