@@ -5177,8 +5177,8 @@ a.ctaButton:hover,
 }
 @media screen and (max-width: 750px) {
   .oval {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     padding: 0;
   }
 }
@@ -5937,6 +5937,7 @@ div.imageOverlay {
 .restrictWidth {
   max-width: 1400px;
   margin: 0px auto;
+  border: 1px solid #f00;
 }
 @media screen and (max-width: 750px) {
   .restrictWidth {
