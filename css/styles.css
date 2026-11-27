@@ -2586,6 +2586,13 @@ div.imageThumb {
   border-radius: 20px 0 20px 0;
   border: 1px solid #00d4fe;
 }
+div.imageEffect {
+  aspect-ratio: 1/0.6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px 0 20px 0;
+}
 @media screen and (min-width: 750px) {
   div.catList {
     margin-top: 1.5vw;
@@ -3796,6 +3803,33 @@ article.content.padXS {
   -webkit-column-gap: 0 !important;
   -moz-column-gap: 0 !important;
   column-gap: 0 !important;
+}
+.stretchChildren {
+  -webkit-box-align: stretch;
+  -o-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch !important;
+}
+.stretchedChildren {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -o-box-orient: vertical;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+.brandBorder {
+  border-radius: 0 0 20px 20px;
+  border: 1px solid #00d4fe;
+  border-top: none;
+  padding: 1.5vw 3vw 1.5vw 1.5vw;
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 /* 
 * typography 

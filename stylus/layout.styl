@@ -931,6 +931,14 @@ div.imageThumb
     margin-bottom:1.2em
     border-radius: 20px 0 20px 0
     border: 1px solid brand2
+div.imageEffect
+    aspect-ratio: 1 / 0.6
+    //background-color: blackAlp5
+    background-size:cover
+    background-position: center
+    background-repeat: no-repeat
+    border-radius: 20px 0 20px 0
+    //border: 1px solid brand2
 
 
 
@@ -1719,3 +1727,16 @@ article.content section > div.gridRows.noGap div.gridItem
 
 /*article.content:not(:first-of-type)
     padding-top: 0*/
+
+
+.stretchChildren
+    align-items: stretch !important
+.stretchedChildren
+    display: flex !important 
+    flex-direction: column !important
+.brandBorder
+    border-radius: 0 0 20px 20px
+    border: 1px solid brand2
+    border-top:none
+    padding: padStd padM padStd padStd
+    flex:1
