@@ -203,6 +203,20 @@ hr.small {
 .noPadLeft {
   padding-left: 0 !important;
 }
+@media screen and (max-width: 750px) {
+  .noPadBottomMob {
+    padding-bottom: 0 !important;
+  }
+  .noPadTopMob {
+    padding-top: 0 !important;
+  }
+  .noPadRightMob {
+    padding-right: 0 !important;
+  }
+  .noPadLeftMob {
+    padding-left: 0 !important;
+  }
+}
 .bgPosBottom {
   background-position: -1px 100%;
 }
@@ -3715,7 +3729,7 @@ article.threeCol > div {
   -o-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  row-gap: 3vw;
+  row-gap: 1.5vw;
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
   article.doubleCol section {
